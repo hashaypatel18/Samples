@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample homepage for M.S.L.S. Mario Saenz Landscaping</title>
+<meta name="description" content="A sample homepage design made for M.S.L.S. Mario Saenz Landscaping by Hashay Patel. Not the official M.S.L.S. Mario Saenz Landscaping website.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3F1E6}
+*{box-sizing:border-box}
+.ms{--paper:#F3F1E6;--fern:#1E4A2C;--moss:#3C7A3F;--leaf:#8CC84B;--sun:#F6C445;--stone:#CBC4B1;--sky:#CFE7EC;--ink:#14261A;font-family:Onest,system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+.ms-serif{font-family:'Instrument Serif',Georgia,serif;font-weight:400;letter-spacing:-.01em}
+@keyframes msSway{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg)}}
+@keyframes msSpray{0%{stroke-dashoffset:0;opacity:.9}100%{stroke-dashoffset:-60;opacity:.2}}
+@keyframes msDrift{0%,100%{transform:translate(0,0)}50%{transform:translate(14px,-10px)}}
+@keyframes msMow{0%{transform:translateX(-40px)}100%{transform:translateX(520px)}}
+.ms-sway{transform-box:fill-box;transform-origin:50% 100%;animation:msSway 5s ease-in-out infinite}
+.ms-spray{stroke-dasharray:4 10;animation:msSpray 1.2s linear infinite}
+.ms-drift{animation:msDrift 6s ease-in-out infinite}
+.ms-mow{animation:msMow 7s linear infinite}
+.ms-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:999px;font:600 16px Onest,sans-serif;text-decoration:none;border:0;cursor:pointer}
+.ms-btn:focus-visible,.ms-tog:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.ms-tog{min-height:48px;padding:0 22px;border-radius:999px;cursor:pointer;font:600 15px Onest,sans-serif}
+.ms-nav a{text-decoration:none;color:var(--ink);font-weight:500}
+.ms-nav a:hover{color:var(--moss)}
+@media (max-width:820px){.ms-nav{display:none !important}}
+@media (prefers-reduced-motion:reduce){.ms-sway,.ms-spray,.ms-drift,.ms-mow{animation:none}}
+</style>
+
+</head>
+<body>
+<template id="dc-tpl">
+
+
+<div class="ms">
+  <header style="max-width: 1300px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--fern)">
+      <svg aria-hidden="true" width="46" height="46" viewBox="0 0 46 46"><circle cx="23" cy="23" r="22" fill="#1E4A2C"/><path d="M23 36 C23 26 16 20 10 19 C12 27 17 33 23 36Z" fill="#8CC84B"/><path d="M23 36 C23 24 29 15 37 13 C36 24 30 32 23 36Z" fill="#F6C445"/><path d="M23 38 V24" stroke="#F3F1E6" stroke-width="2"/></svg>
+      <span style="display: flex; flex-direction: column; gap: 2px">
+        <span class="ms-serif" style="font-size: 26px; line-height: 1">Mario Saenz</span>
+        <span style="font-size: 13px; font-weight: 600; color: var(--moss)">Landscaping Services · Fort Smith</span>
+      </span>
+    </a>
+    <nav class="ms-nav" aria-label="Main" style="display: flex; gap: 30px">
+      <a href="#transform">Before &amp; after</a>
+      <a href="#services">Services</a>
+      <a href="#story">30 years</a>
+      <a href="#quote">Free quote</a>
+    </nav>
+    <a class="ms-btn" href="tel:+17863429905" style="background: var(--fern); color: var(--paper); min-height: 48px">(786) 342-9905</a>
+  </header>
+
+  <section id="top" style="max-width: 1300px; margin: 0 auto; padding: 20px 24px 80px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 44px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 26px">
+      <p style="margin: 0; display: inline-flex; align-self: flex-start; gap: 10px; align-items: center; padding: 8px 16px; border-radius: 999px; background: #E3EDCF; color: var(--fern); font-weight: 600; font-size: 14px"><span aria-hidden="true" style="color: #C98A00">★★★★★</span>4.9 from 168 Google reviews</p>
+      <h1 class="ms-serif" style="margin: 0; font-size: clamp(60px, 8vw, 118px); line-height: .92; color: var(--fern)">The yard your neighbors slow down to look at.</h1>
+      <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #3D5143; max-width: 520px">Landscape design, mowing, fresh sod, tree cutting and hardscaping across Fort Smith. Thirty years of keeping lawns sharp, from Florida to Arkansas.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a class="ms-btn" href="#quote" style="background: var(--sun); color: var(--ink)">Get a free quote</a>
+        <a class="ms-btn" href="#transform" style="background: transparent; color: var(--fern); box-shadow: inset 0 0 0 2px var(--fern)">See a transformation</a>
+      </div>
+    </div>
+
+    <div style="position: relative">
+      <svg role="img" aria-label="Illustrated front yard with striped lawn, swaying trees, a stone path and a sprinkler" viewBox="0 0 600 560" style="display: block; width: 100%; height: auto; border-radius: 40px 200px 40px 40px; background: linear-gradient(180deg, #CFE7EC 0%, #EAF3E0 60%)">
+        <circle class="ms-drift" cx="470" cy="110" r="54" fill="#F6C445"/>
+        <path d="M0 300 Q150 250 300 280 T600 260 V560 H0Z" fill="#9BCB61"/>
+        <rect x="190" y="170" width="220" height="140" fill="#F3F1E6"/><path d="M170 180 L300 100 L430 180Z" fill="#1E4A2C"/>
+        <rect x="280" y="230" width="44" height="80" rx="4" fill="#3C7A3F"/><rect x="210" y="210" width="50" height="40" rx="4" fill="#CFE7EC"/><rect x="342" y="210" width="50" height="40" rx="4" fill="#CFE7EC"/>
+        <g>
+          <path d="M0 330 H600 V560 H0Z" fill="#7DBB45"/>
+          <g fill="#8CC84B"><path d="M0 330 H600 V368 H0Z"/><path d="M0 406 H600 V446 H0Z"/><path d="M0 486 H600 V526 H0Z"/></g>
+        </g>
+        <path d="M302 310 C300 380 250 430 230 560" stroke="#CBC4B1" stroke-width="58" fill="none" stroke-dasharray="40 8"/>
+        <g class="ms-sway"><rect x="70" y="210" width="16" height="130" fill="#6B4A2E"/><circle cx="78" cy="200" r="62" fill="#3C7A3F"/><circle cx="50" cy="230" r="40" fill="#1E4A2C"/><circle cx="108" cy="228" r="38" fill="#2F6537"/></g>
+        <g class="ms-sway" style="animation-delay:-2s"><rect x="506" y="240" width="12" height="100" fill="#6B4A2E"/><circle cx="512" cy="232" r="46" fill="#2F6537"/><circle cx="532" cy="252" r="30" fill="#3C7A3F"/></g>
+        <g fill="#E8667A"><circle cx="150" cy="320" r="8"/><circle cx="168" cy="314" r="7"/><circle cx="420" cy="322" r="8"/><circle cx="440" cy="316" r="7"/><circle cx="460" cy="324" r="8"/></g>
+        <g fill="#F6C445"><circle cx="186" cy="322" r="6"/><circle cx="404" cy="318" r="6"/></g>
+        <g transform="translate(460 470)"><rect x="-6" y="-6" width="12" height="18" fill="#1E4A2C"/><g stroke="#CFE7EC" stroke-width="3" fill="none"><path class="ms-spray" d="M0 -6 Q-50 -80 -110 -10"/><path class="ms-spray" d="M0 -6 Q40 -70 90 -14" style="animation-delay:-.4s"/></g></g>
+        <g class="ms-mow"><g transform="translate(0 412)"><rect x="0" y="0" width="40" height="22" rx="5" fill="#E2462E"/><circle cx="8" cy="24" r="6" fill="#14261A"/><circle cx="34" cy="24" r="6" fill="#14261A"/><path d="M0 4 L-26 -24" stroke="#14261A" stroke-width="4"/></g></g>
+      </svg>
+      <div style="position: absolute; left: -18px; bottom: 30px; background: var(--fern); color: var(--paper); border-radius: 22px; padding: 18px 22px; box-shadow: 0 24px 40px -20px rgba(20,38,26,.6); display: flex; gap: 14px; align-items: center">
+        <span class="ms-serif" style="font-size: 54px; line-height: .9; color: var(--sun)">30</span>
+        <span style="font-size: 14px; line-height: 1.4">years in the<br>landscaping trade</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="transform" style="background: var(--fern); color: var(--paper)">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 100px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 50px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 22px">
+        <h2 class="ms-serif" style="margin: 0; font-size: clamp(48px, 6vw, 84px); line-height: .95">Same yard, a few days of work later.</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #CFE0C9; max-width: 460px">Overgrown beds, patchy grass and limbs over the roof, cleared and reshaped into something you'll actually want to sit in.</p>
+        <div role="tablist" aria-label="Compare before and after" style="display: inline-flex; align-self: flex-start; gap: 6px; padding: 6px; border-radius: 999px; background: rgba(243,241,230,.1)">
+          <sc-for list="{{ views }}" as="v" hint-placeholder-count="2">
+            <button type="button" role="tab" class="ms-tog" aria-selected="{{ v.sel }}" onClick="{{ v.pick }}" style="{{ v.style }}">{{ v.label }}</button>
+          </sc-for>
+        </div>
+        <ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; font-size: 16px">
+          <sc-for list="{{ yard.notes }}" as="n" hint-placeholder-count="3">
+            <li style="display: flex; gap: 12px; align-items: center"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: var(--sun)"></span>{{ n.t }}</li>
+          </sc-for>
+        </ul>
+      </div>
+      <figure style="margin: 0; position: relative; border-radius: 30px; overflow: hidden; background: {{ yard.sky }}">
+        <svg role="img" aria-label="{{ yard.alt }}" viewBox="0 0 600 420" style="display: block; width: 100%; height: auto">
+          <rect width="600" height="420" fill="{{ yard.sky }}"/>
+          <rect x="160" y="80" width="280" height="160" fill="#F3F1E6"/><path d="M140 92 L300 20 L460 92Z" fill="#2B3A2F"/>
+          <rect x="0" y="230" width="600" height="190" fill="{{ yard.grass }}"/>
+          <g opacity="{{ yard.stripes }}" fill="#8CC84B"><rect y="250" width="600" height="28"/><rect y="306" width="600" height="28"/><rect y="362" width="600" height="28"/></g>
+          <g opacity="{{ yard.weeds }}" fill="#8C8A3E"><circle cx="80" cy="260" r="40"/><circle cx="130" cy="290" r="30"/><circle cx="500" cy="270" r="44"/><circle cx="450" cy="300" r="26"/><circle cx="300" cy="360" r="22"/><circle cx="360" cy="330" r="18"/></g>
+          <g opacity="{{ yard.patch }}" fill="#B9A67A"><ellipse cx="220" cy="330" rx="50" ry="16"/><ellipse cx="420" cy="380" rx="60" ry="14"/></g>
+          <path opacity="{{ yard.stripes }}" d="M300 240 C296 300 270 360 260 420" stroke="#CBC4B1" stroke-width="44" fill="none" stroke-dasharray="30 6"/>
+          <g opacity="{{ yard.stripes }}"><circle cx="110" cy="230" r="22" fill="#E8667A"/><circle cx="140" cy="236" r="16" fill="#F6C445"/><circle cx="470" cy="230" r="22" fill="#E8667A"/><circle cx="500" cy="236" r="16" fill="#F6C445"/></g>
+          <g opacity="{{ yard.limb }}"><path d="M560 0 C520 60 470 80 400 100" stroke="#5A3D26" stroke-width="16" fill="none"/><circle cx="420" cy="90" r="40" fill="#556B2F"/></g>
+        </svg>
+        <figcaption style="position: absolute; top: 18px; left: 18px; padding: 8px 16px; border-radius: 999px; background: var(--paper); color: var(--fern); font-weight: 700">{{ yard.tag }}</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="services" style="max-width: 1300px; margin: 0 auto; padding: 100px 24px">
+    <h2 class="ms-serif" style="margin: 0 0 40px; font-size: clamp(46px, 5.6vw, 78px); color: var(--fern); max-width: 760px; line-height: .95">Everything outside the front door</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 16px">
+      <sc-for list="{{ svcs }}" as="s" hint-placeholder-count="5">
+        <article style="{{ s.style }}">
+          <span aria-hidden="true" style="font-size: 40px">{{ s.icon }}</span>
+          <h3 class="ms-serif" style="margin: 0; font-size: 36px; line-height: 1">{{ s.name }}</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6; opacity: .85">{{ s.desc }}</p>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="story" style="background: #E3EDCF">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 100px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 50px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <h2 class="ms-serif" style="margin: 0; font-size: clamp(46px, 5.6vw, 78px); color: var(--fern); line-height: .95">From Florida lawns to Fort Smith yards</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3D5143">Mario started out in Florida and brought three decades of landscape design and mowing to the Fort Smith area. The work is hands-on, the prices are fair, and the stripes in the grass are straight.</p>
+      </div>
+      <ol style="margin: 0; padding: 0; list-style: none; display: grid; gap: 14px">
+        <li style="display: grid; grid-template-columns: 70px 1fr; gap: 18px; align-items: center; padding: 22px; border-radius: 22px; background: var(--paper)"><span class="ms-serif" style="font-size: 44px; color: var(--moss)">1</span><span><strong style="display: block; font-size: 18px">Florida</strong><span style="color: #3D5143">Where Mario learned the trade: design, mowing and year-round lawn care.</span></span></li>
+        <li style="display: grid; grid-template-columns: 70px 1fr; gap: 18px; align-items: center; padding: 22px; border-radius: 22px; background: var(--paper)"><span class="ms-serif" style="font-size: 44px; color: var(--moss)">2</span><span><strong style="display: block; font-size: 18px">Fort Smith, Arkansas</strong><span style="color: #3D5143">M.S.L.S. today: lawns, sod, trees and hardscapes for the River Valley.</span></span></li>
+        <li style="display: grid; grid-template-columns: 70px 1fr; gap: 18px; align-items: center; padding: 22px; border-radius: 22px; background: var(--fern); color: var(--paper)"><span class="ms-serif" style="font-size: 44px; color: var(--sun)">4.9</span><span><strong style="display: block; font-size: 18px">168 Google reviews</strong><span style="color: #CFE0C9">And 96% of Facebook reviewers recommend M.S.L.S.</span></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="quote" style="max-width: 1300px; margin: 0 auto; padding: 100px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 44px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <h2 class="ms-serif" style="margin: 0; font-size: clamp(46px, 5.6vw, 78px); color: var(--fern); line-height: .95">Get a free quote</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3D5143">Open 9 am to 5 pm, seven days a week. Call, text or send the form and Mario will come take a look.</p>
+      <p style="margin: 0; font-size: 22px; font-weight: 700"><a href="tel:+17863429905" style="color: var(--fern)">(786) 342-9905</a></p>
+      <p style="margin: 0; color: #3D5143">mariosaenzlawndog@gmail.com</p>
+    </div>
+    <form aria-label="Request a free quote" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px; padding: 30px; border-radius: 30px; background: var(--fern)">
+      <label style="display: grid; gap: 8px; color: #CFE0C9; font-weight: 600">Your name<input type="text" style="min-height: 54px; padding: 0 16px; border: 0; border-radius: 14px; font: 400 16px Onest, sans-serif"></label>
+      <label style="display: grid; gap: 8px; color: #CFE0C9; font-weight: 600">Phone<input type="tel" style="min-height: 54px; padding: 0 16px; border: 0; border-radius: 14px; font: 400 16px Onest, sans-serif"></label>
+      <label style="grid-column: 1 / -1; display: grid; gap: 8px; color: #CFE0C9; font-weight: 600">What does the yard need?<select style="min-height: 54px; padding: 0 16px; border: 0; border-radius: 14px; font: 400 16px Onest, sans-serif"><option>Regular mowing</option><option>New sod</option><option>Landscape design</option><option>Tree cutting</option><option>Hardscaping</option></select></label>
+      <label style="grid-column: 1 / -1; display: grid; gap: 8px; color: #CFE0C9; font-weight: 600">Address or neighborhood<input type="text" style="min-height: 54px; padding: 0 16px; border: 0; border-radius: 14px; font: 400 16px Onest, sans-serif"></label>
+      <button type="button" class="ms-btn" style="grid-column: 1 / -1; background: var(--sun); color: var(--ink)">Send my quote request</button>
+    </form>
+  </section>
+
+  <footer style="background: var(--ink); color: #A9B9AC">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; font-size: 14px">
+      <span class="ms-serif" style="font-size: 24px; color: var(--paper)">M.S.L.S. · Mario Saenz Landscaping Services</span>
+      <span>Fort Smith, Arkansas · (786) 342-9905 · Open daily 9–5</span>
+    </div>
+  </footer>
+</div>
+</template>
+<div id="dc-root"></div>
+<div role="note" style="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;max-width:calc(100% - 24px);padding:9px 16px;border-radius:999px;background:rgba(20,20,20,.88);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">Sample design by Hashay Patel for M.S.L.S. Mario Saenz Landscaping. Not the official M.S.L.S. Mario Saenz Landscaping website.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morphdom/2.7.4/morphdom-umd.min.js"></script>
+<script>
+(function(){
+  class DCLogic{constructor(p){this.props=p||{};this.state={}}
+    setState(s){Object.assign(this.state,typeof s==='function'?s(this.state):s);render()}
+    forceUpdate(){render()}}
+  window.DCLogic=DCLogic;
+  var TPL=document.getElementById('dc-tpl').innerHTML, root=document.getElementById('dc-root'), comp, fns=[];
+  function look(p,c){var cur=c;p.split('.').forEach(function(k){cur=(cur!=null&&typeof cur==='object')?cur[k]:undefined});return cur}
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+  function fill(t,c){
+    t=t.replace(/\son(\w+)="\{\{\s*([\w.$]+)\s*\}\}"/g,function(m,ev,p){var f=look(p,c);if(typeof f!=='function')return '';fns.push(f);return ' on'+ev.toLowerCase()+'="__dc('+(fns.length-1)+',event)"'});
+    return t.replace(/\{\{\s*([\w.$]+)\s*\}\}/g,function(m,p){return esc(look(p,c))});
+  }
+  function build(){
+    fns=[];var v=comp.renderVals();
+    var t=TPL.replace(/<sc-for([^>]*)>([\s\S]*?)<\/sc-for>/g,function(m,a,inner){
+      var l=(a.match(/list="\{\{\s*([\w.]+)\s*\}\}"/)||[])[1],as=(a.match(/as="(\w+)"/)||[])[1];
+      var arr=look(l,v)||[];return arr.map(function(it){var c=Object.assign({},v);c[as]=it;return fill(inner,c)}).join('');
+    });
+    return fill(t,v);
+  }
+  window.__dc=function(i,e){if(fns[i])fns[i](e)};
+  function render(){var n=document.createElement('div');n.id='dc-root';n.innerHTML=build();
+    if(window.morphdom){morphdom(root,n)}else{root.innerHTML=n.innerHTML}}
+  window.__dcStart=function(C){comp=new C({});render()};
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { v: "after" }; }
+  renderVals() {
+    var self = this;
+    var after = this.state.v === "after";
+    return {
+      views: [["before", "Before"], ["after", "After"]].map(function (x) {
+        var on = self.state.v === x[0];
+        return { label: x[1], sel: on ? "true" : "false", pick: function () { self.setState({ v: x[0] }); },
+          style: on ? "background:#F6C445;color:#14261A;border:0" : "background:transparent;color:#F3F1E6;border:0" };
+      }),
+      yard: after ? {
+        tag: "After", alt: "The same yard after: striped lawn, stone path and flower beds", sky: "#CFE7EC", grass: "#7DBB45",
+        stripes: 1, weeds: 0, patch: 0, limb: 0,
+        notes: [{ t: "Fresh sod and a clean mowing pattern" }, { t: "Stone path and new flower beds" }, { t: "Overhanging limb removed" }]
+      } : {
+        tag: "Before", alt: "A yard before: weeds, bare patches and an overhanging limb", sky: "#DCE3E0", grass: "#A3A86A",
+        stripes: 0, weeds: 1, patch: 1, limb: 1,
+        notes: [{ t: "Weeds taking over the beds" }, { t: "Bare, patchy grass" }, { t: "A limb hanging over the roof" }]
+      },
+      svcs: [
+        { icon: "🌱", name: "Fresh sod", desc: "New lawns laid level and watered in, for that instant green.", style: "display:flex;flex-direction:column;gap:14px;padding:30px;border-radius:28px;background:#1E4A2C;color:#F3F1E6;min-height:260px" },
+        { icon: "🌿", name: "Mowing & lawn care", desc: "Weekly or every other week, with clean edges and straight stripes.", style: "display:flex;flex-direction:column;gap:14px;padding:30px;border-radius:28px;background:#8CC84B;color:#14261A;min-height:260px" },
+        { icon: "🌳", name: "Tree cutting", desc: "Trimming, limb removal and full takedowns, cleaned up after.", style: "display:flex;flex-direction:column;gap:14px;padding:30px;border-radius:28px;background:#E3EDCF;color:#14261A;min-height:260px" },
+        { icon: "🪨", name: "Hardscaping", desc: "Stone paths, borders and patios that hold up to Arkansas weather.", style: "display:flex;flex-direction:column;gap:14px;padding:30px;border-radius:28px;background:#CBC4B1;color:#14261A;min-height:260px" },
+        { icon: "✏️", name: "Landscape design", desc: "A plan for beds, plants and layout before a single shovel goes in.", style: "display:flex;flex-direction:column;gap:14px;padding:30px;border-radius:28px;background:#F6C445;color:#14261A;min-height:260px" }
+      ]
+    };
+  }
+}
+
+__dcStart(Component);</script>
+</body>
+</html>

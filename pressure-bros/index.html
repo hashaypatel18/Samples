@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample homepage for Pressure Bros</title>
+<meta name="description" content="A sample homepage design made for Pressure Bros by Hashay Patel. Not the official Pressure Bros website.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#EAFBFD}
+*{box-sizing:border-box}
+.pb{--bayou:#0A2B3D;--deep:#0F4058;--aqua:#1FC2D6;--foam:#EAFBFD;--lemon:#FFD84A;--grime:#8F8667;font-family:Outfit,system-ui,sans-serif;color:var(--bayou);background:var(--foam)}
+.pb-heavy{font-family:'Dela Gothic One',Impact,sans-serif;font-weight:400;line-height:1}
+@keyframes pbSweep{0%,100%{transform:translateX(-160px)}50%{transform:translateX(160px)}}
+@keyframes pbDrop{0%{transform:translateY(-10px);opacity:0}30%{opacity:1}100%{transform:translateY(70px);opacity:0}}
+@keyframes pbBubble{0%{transform:translateY(0) scale(.6);opacity:0}20%{opacity:.9}100%{transform:translateY(-140px) scale(1.1);opacity:0}}
+.pb-sweep{animation:pbSweep 3.4s ease-in-out infinite}
+.pb-drop{animation:pbDrop 1s linear infinite}
+.pb-bub{animation:pbBubble 5s ease-in infinite}
+.pb-btn{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 28px;border-radius:18px;font:700 17px Outfit,sans-serif;text-decoration:none;border:0;cursor:pointer}
+.pb-btn:focus-visible,.pb-pick:focus-visible{outline:3px solid var(--lemon);outline-offset:3px}
+.pb-pick{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:18px;border-radius:18px;cursor:pointer;font:600 16px Outfit,sans-serif;text-align:left;min-height:110px}
+.pb-nav a{color:var(--foam);text-decoration:none;font-weight:500}
+.pb-nav a:hover{color:var(--lemon)}
+@media (max-width:820px){.pb-nav{display:none !important}}
+@media (prefers-reduced-motion:reduce){.pb-sweep,.pb-drop,.pb-bub{animation:none}}
+</style>
+
+</head>
+<body>
+<template id="dc-tpl">
+
+
+<div class="pb">
+  <section id="top" style="position: relative; overflow: hidden; background: radial-gradient(90% 80% at 80% 20%, #13607E 0%, #0F4058 40%, #0A2B3D 80%); color: var(--foam)">
+    <span aria-hidden="true" class="pb-bub" style="position: absolute; left: 8%; bottom: 40px; width: 26px; height: 26px; border-radius: 50%; border: 2px solid rgba(31,194,214,.6)"></span>
+    <span aria-hidden="true" class="pb-bub" style="position: absolute; left: 44%; bottom: 10px; width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(31,194,214,.6); animation-delay: -2s"></span>
+    <span aria-hidden="true" class="pb-bub" style="position: absolute; left: 30%; bottom: 60px; width: 36px; height: 36px; border-radius: 50%; border: 2px solid rgba(31,194,214,.4); animation-delay: -3.5s"></span>
+    <header style="position: relative; z-index: 2; max-width: 1300px; margin: 0 auto; padding: 22px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px">
+      <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--foam)">
+        <svg aria-hidden="true" width="46" height="46" viewBox="0 0 46 46"><path d="M23 3 C23 3 8 20 8 29 a15 15 0 0 0 30 0 C38 20 23 3 23 3Z" fill="#1FC2D6"/><path d="M16 30 a7 7 0 0 0 7 7" stroke="#EAFBFD" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+        <span style="display: flex; flex-direction: column; gap: 2px"><span class="pb-heavy" style="font-size: 22px">Pressure Bros</span><span style="font-size: 13px; opacity: .8">Exterior cleaning · Lake Charles</span></span>
+      </a>
+      <nav class="pb-nav" aria-label="Main" style="display: flex; gap: 30px"><a href="#surfaces">What we wash</a><a href="#reviews">Reviews</a><a href="#quote">Free quote</a></nav>
+      <a class="pb-btn" href="tel:+13376886493" style="min-height: 48px; background: var(--lemon); color: var(--bayou)">(337) 688-6493</a>
+    </header>
+
+    <div style="position: relative; z-index: 2; max-width: 1300px; margin: 0 auto; padding: 30px 24px 90px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 40px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 24px">
+        <p style="margin: 0; align-self: flex-start; padding: 8px 16px; border-radius: 999px; background: rgba(31,194,214,.18); color: #9EEAF4; font-weight: 600">★★★★★ 5.0 from 48 Google reviews</p>
+        <h1 class="pb-heavy" style="margin: 0; font-size: clamp(54px, 7vw, 100px)">Louisiana grime, gone.</h1>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #C6E9F0; max-width: 520px">Mildew, pollen and road grime don't stand a chance. Pressure Bros washes houses, driveways, fences and patios across Lake Charles, at prices customers call "sooo competitive".</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a class="pb-btn" href="#quote" style="background: var(--lemon); color: var(--bayou)">Get a free quote</a>
+          <a class="pb-btn" href="#surfaces" style="background: rgba(234,251,253,.1); color: var(--foam); box-shadow: inset 0 0 0 2px rgba(234,251,253,.5)">What we wash</a>
+        </div>
+      </div>
+
+      <figure style="margin: 0; position: relative">
+        <svg role="img" aria-label="A house front half covered in grime and half freshly washed, with a water jet sweeping across" viewBox="0 0 600 480" style="display: block; width: 100%; height: auto; border-radius: 34px">
+          <defs>
+            <clipPath id="pbL"><rect x="0" y="0" width="300" height="480"/></clipPath>
+            <clipPath id="pbR"><rect x="300" y="0" width="300" height="480"/></clipPath>
+            <pattern id="pbSiding" width="600" height="22" patternUnits="userSpaceOnUse"><rect width="600" height="22" fill="#F6FBFC"/><rect y="18" width="600" height="4" fill="#D6E7EB"/></pattern>
+          </defs>
+          <rect width="600" height="480" fill="#BFEFF5"/>
+          <path d="M60 170 L300 50 L540 170Z" fill="#33495A"/>
+          <rect x="80" y="170" width="440" height="230" fill="url(#pbSiding)"/>
+          <rect x="130" y="210" width="90" height="80" rx="6" fill="#7FD6E3"/><rect x="380" y="210" width="90" height="80" rx="6" fill="#7FD6E3"/>
+          <rect x="262" y="270" width="76" height="130" rx="6" fill="#0F4058"/>
+          <rect y="400" width="600" height="80" fill="#D9DEDC"/>
+          <g clip-path="url(#pbL)" opacity=".8">
+            <rect x="80" y="170" width="440" height="230" fill="#8F8667" opacity=".55"/>
+            <g fill="#4E5B3A" opacity=".55"><circle cx="110" cy="190" r="26"/><circle cx="160" cy="320" r="34"/><circle cx="240" cy="200" r="22"/><circle cx="100" cy="370" r="28"/></g>
+            <rect y="400" width="600" height="80" fill="#7A735C" opacity=".6"/>
+            <g fill="#5C5641" opacity=".5"><ellipse cx="80" cy="440" rx="50" ry="12"/><ellipse cx="220" cy="460" rx="60" ry="10"/></g>
+          </g>
+          <g clip-path="url(#pbR)"><g fill="#FFFFFF" opacity=".9"><path d="M420 190 l6 14 l14 6 l-14 6 l-6 14 l-6 -14 l-14 -6 l14 -6z"/><path d="M500 330 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4z"/><path d="M360 430 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4z"/></g></g>
+          <line x1="300" y1="0" x2="300" y2="480" stroke="#FFD84A" stroke-width="4" stroke-dasharray="10 8"/>
+          <g class="pb-sweep">
+            <g transform="translate(300 0)">
+              <path d="M-12 -10 L12 -10 L4 120 L-4 120Z" fill="#1FC2D6" opacity=".35"/>
+              <path d="M-3 0 L3 0 L1 120 L-1 120Z" fill="#EAFBFD"/>
+              <g fill="#1FC2D6"><circle class="pb-drop" cx="-10" cy="130" r="4"/><circle class="pb-drop" cx="8" cy="126" r="3" style="animation-delay:-.3s"/><circle class="pb-drop" cx="0" cy="140" r="5" style="animation-delay:-.6s"/></g>
+            </g>
+          </g>
+        </svg>
+        <figcaption style="position: absolute; left: 14px; right: 14px; bottom: -22px; display: flex; justify-content: space-between">
+          <span style="padding: 10px 18px; border-radius: 999px; background: var(--grime); color: #fff; font-weight: 700">Before</span>
+          <span style="padding: 10px 18px; border-radius: 999px; background: var(--lemon); color: var(--bayou); font-weight: 700">After</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="surfaces" style="max-width: 1300px; margin: 0 auto; padding: 110px 24px 100px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 44px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <h2 class="pb-heavy" style="margin: 0; font-size: clamp(40px, 5vw, 66px)">What needs a wash?</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3B5866">Pick a surface to see how it gets cleaned. Delicate surfaces get a gentle soft wash, hard ones get the full pressure.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px">
+          <sc-for list="{{ surf }}" as="s" hint-placeholder-count="4">
+            <button type="button" class="pb-pick" aria-pressed="{{ s.sel }}" onClick="{{ s.pick }}" style="{{ s.style }}"><span aria-hidden="true" style="font-size: 30px">{{ s.icon }}</span>{{ s.name }}</button>
+          </sc-for>
+        </div>
+      </div>
+      <article style="border-radius: 30px; background: var(--bayou); color: var(--foam); padding: 36px; display: flex; flex-direction: column; gap: 20px; min-height: 420px; position: relative; overflow: hidden">
+        <span aria-hidden="true" style="position: absolute; right: -60px; top: -60px; width: 240px; height: 240px; border-radius: 50%; background: radial-gradient(circle, rgba(31,194,214,.45), transparent 70%)"></span>
+        <p style="margin: 0; position: relative; color: var(--aqua); font-weight: 700">{{ cur.method }}</p>
+        <h3 class="pb-heavy" style="margin: 0; position: relative; font-size: 40px">{{ cur.name }}</h3>
+        <p style="margin: 0; position: relative; font-size: 18px; line-height: 1.65; color: #C6E9F0">{{ cur.desc }}</p>
+        <div style="margin-top: auto; position: relative; display: grid; gap: 10px">
+          <span style="font-size: 14px; color: #9EC9D4">Pressure used</span>
+          <div style="height: 14px; border-radius: 999px; background: rgba(234,251,253,.12); overflow: hidden"><div style="height: 100%; width: {{ cur.psi }}; border-radius: 999px; background: linear-gradient(90deg, #1FC2D6, #FFD84A)"></div></div>
+          <div style="display: flex; justify-content: space-between; font-size: 13px; color: #9EC9D4"><span>Gentle soft wash</span><span>Full pressure</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="reviews" style="background: var(--aqua)">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 100px 24px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 18px; margin-bottom: 36px">
+        <h2 class="pb-heavy" style="margin: 0; font-size: clamp(40px, 5vw, 66px); color: var(--bayou)">A perfect 5.0 on Google</h2>
+        <p style="margin: 0; font-weight: 600; color: var(--bayou)">48 Google reviews, and 98% recommend on Facebook</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px">
+        <figure style="margin: 0; padding: 30px; border-radius: 26px; background: var(--bayou); color: var(--foam); display: flex; flex-direction: column; gap: 16px; min-height: 240px; transform: rotate(-1deg)"><span aria-hidden="true" style="color: var(--lemon)">★★★★★</span><blockquote style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 600">"Competitive pricing for top-tier service and attention to detail."</blockquote><figcaption style="margin-top: auto; opacity: .7">Google review</figcaption></figure>
+        <figure style="margin: 0; padding: 30px; border-radius: 26px; background: var(--foam); display: flex; flex-direction: column; gap: 16px; min-height: 240px"><span aria-hidden="true" style="color: #0F8FA0">★★★★★</span><blockquote style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 600">"My husband Ray and I were extremely happy with the work done on our house."</blockquote><figcaption style="margin-top: auto; opacity: .7">Google review</figcaption></figure>
+        <figure style="margin: 0; padding: 30px; border-radius: 26px; background: var(--lemon); display: flex; flex-direction: column; gap: 16px; min-height: 240px; transform: rotate(1deg)"><span aria-hidden="true">★★★★★</span><blockquote style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 600">"His prices were sooo competitive too."</blockquote><figcaption style="margin-top: auto; opacity: .7">Google review</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote" style="max-width: 1300px; margin: 0 auto; padding: 100px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 44px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <h2 class="pb-heavy" style="margin: 0; font-size: clamp(40px, 5vw, 66px)">Free quote from Devin</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3B5866">Send a few details, or text a photo, and Devin will get back to you with a price.</p>
+      <p style="margin: 0; font-size: 24px; font-weight: 700"><a href="tel:+13376886493" style="color: var(--deep)">(337) 688-6493</a></p>
+      <p style="margin: 0; color: #3B5866">Lake Charles, LA and surrounding areas · Devincormier20@gmail.com</p>
+    </div>
+    <form aria-label="Request a free quote" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px; background: #fff; padding: 30px; border-radius: 30px; box-shadow: 0 30px 60px -40px rgba(10,43,61,.5)">
+      <label style="display: grid; gap: 8px; font-weight: 600">Name<input type="text" style="min-height: 54px; padding: 0 16px; border: 2px solid #BFE6EC; border-radius: 14px; font: 400 16px Outfit, sans-serif"></label>
+      <label style="display: grid; gap: 8px; font-weight: 600">Phone<input type="tel" style="min-height: 54px; padding: 0 16px; border: 2px solid #BFE6EC; border-radius: 14px; font: 400 16px Outfit, sans-serif"></label>
+      <fieldset style="grid-column: 1 / -1; border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px"><legend style="font-weight: 600; margin-bottom: 8px">What should we wash?</legend>
+        <label style="display: flex; gap: 8px; align-items: center; padding: 10px 14px; border-radius: 12px; background: var(--foam)"><input type="checkbox" checked> House</label>
+        <label style="display: flex; gap: 8px; align-items: center; padding: 10px 14px; border-radius: 12px; background: var(--foam)"><input type="checkbox"> Driveway</label>
+        <label style="display: flex; gap: 8px; align-items: center; padding: 10px 14px; border-radius: 12px; background: var(--foam)"><input type="checkbox"> Fence or deck</label>
+        <label style="display: flex; gap: 8px; align-items: center; padding: 10px 14px; border-radius: 12px; background: var(--foam)"><input type="checkbox"> Patio</label>
+      </fieldset>
+      <button type="button" class="pb-btn" style="grid-column: 1 / -1; background: var(--bayou); color: var(--lemon)">Send for a free quote</button>
+    </form>
+  </section>
+
+  <footer style="background: var(--bayou); color: #9EC9D4">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 30px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; font-size: 14px">
+      <span class="pb-heavy" style="color: var(--foam); font-size: 18px">Pressure Bros Pro Wash</span>
+      <span>Exterior cleaning · Lake Charles, LA · (337) 688-6493</span>
+    </div>
+  </footer>
+</div>
+</template>
+<div id="dc-root"></div>
+<div role="note" style="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;max-width:calc(100% - 24px);padding:9px 16px;border-radius:999px;background:rgba(20,20,20,.88);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">Sample design by Hashay Patel for Pressure Bros. Not the official Pressure Bros website.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morphdom/2.7.4/morphdom-umd.min.js"></script>
+<script>
+(function(){
+  class DCLogic{constructor(p){this.props=p||{};this.state={}}
+    setState(s){Object.assign(this.state,typeof s==='function'?s(this.state):s);render()}
+    forceUpdate(){render()}}
+  window.DCLogic=DCLogic;
+  var TPL=document.getElementById('dc-tpl').innerHTML, root=document.getElementById('dc-root'), comp, fns=[];
+  function look(p,c){var cur=c;p.split('.').forEach(function(k){cur=(cur!=null&&typeof cur==='object')?cur[k]:undefined});return cur}
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+  function fill(t,c){
+    t=t.replace(/\son(\w+)="\{\{\s*([\w.$]+)\s*\}\}"/g,function(m,ev,p){var f=look(p,c);if(typeof f!=='function')return '';fns.push(f);return ' on'+ev.toLowerCase()+'="__dc('+(fns.length-1)+',event)"'});
+    return t.replace(/\{\{\s*([\w.$]+)\s*\}\}/g,function(m,p){return esc(look(p,c))});
+  }
+  function build(){
+    fns=[];var v=comp.renderVals();
+    var t=TPL.replace(/<sc-for([^>]*)>([\s\S]*?)<\/sc-for>/g,function(m,a,inner){
+      var l=(a.match(/list="\{\{\s*([\w.]+)\s*\}\}"/)||[])[1],as=(a.match(/as="(\w+)"/)||[])[1];
+      var arr=look(l,v)||[];return arr.map(function(it){var c=Object.assign({},v);c[as]=it;return fill(inner,c)}).join('');
+    });
+    return fill(t,v);
+  }
+  window.__dc=function(i,e){if(fns[i])fns[i](e)};
+  function render(){var n=document.createElement('div');n.id='dc-root';n.innerHTML=build();
+    if(window.morphdom){morphdom(root,n)}else{root.innerHTML=n.innerHTML}}
+  window.__dcStart=function(C){comp=new C({});render()};
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { s: "house" }; }
+  renderVals() {
+    var self = this;
+    var list = [
+      { id: "house", icon: "🏠", name: "House siding", method: "Soft wash", desc: "Siding, soffits and trim cleaned with low pressure and the right solution, so mildew and pollen lift off without forcing water behind the boards.", psi: "28%" },
+      { id: "drive", icon: "🚗", name: "Driveways & sidewalks", method: "Surface cleaner, full pressure", desc: "Oil spots, tire marks and that grey film on concrete, blasted off evenly so there are no stripes left behind.", psi: "92%" },
+      { id: "fence", icon: "🪵", name: "Fences & decks", method: "Medium pressure", desc: "Green and grey wood brought back to its color, with care taken not to fuzz or gouge the boards.", psi: "55%" },
+      { id: "patio", icon: "🪴", name: "Patios & pool decks", method: "Pressure plus rinse", desc: "Slippery algae and dirt cleared from pavers and concrete so the outdoor space is ready for company.", psi: "75%" }
+    ];
+    var cur = list.filter(function (x) { return x.id === self.state.s; })[0];
+    return {
+      surf: list.map(function (x) {
+        var on = x.id === self.state.s;
+        return { icon: x.icon, name: x.name, sel: on ? "true" : "false", pick: function () { self.setState({ s: x.id }); },
+          style: on ? "background:#0A2B3D;color:#EAFBFD;border:2px solid #0A2B3D" : "background:#fff;color:#0A2B3D;border:2px solid #BFE6EC" };
+      }),
+      cur: cur
+    };
+  }
+}
+
+__dcStart(Component);</script>
+</body>
+</html>

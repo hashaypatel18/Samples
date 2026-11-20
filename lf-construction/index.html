@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample homepage for LF Construction &amp; Excavating</title>
+<meta name="description" content="A sample homepage design made for LF Construction &amp; Excavating by Hashay Patel. Not the official LF Construction &amp; Excavating website.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,400..900&amp;family=Inter+Tight:wght@400..800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#EDE4D3}
+*{box-sizing:border-box}
+.lf{--sand:#EDE4D3;--clay:#B5532F;--olive:#56633A;--char:#24221E;--hivis:#F2C230;--dirt:#7A5638;font-family:'Inter Tight',system-ui,sans-serif;color:var(--char);background:var(--sand)}
+.lf-d{font-family:Anybody,sans-serif;font-weight:850;font-stretch:120%;letter-spacing:-.02em;text-transform:uppercase}
+@keyframes lfArm{0%,100%{transform:rotate(0)}40%,60%{transform:rotate(24deg)}}
+@keyframes lfBucket{0%,100%{transform:rotate(0)}40%,60%{transform:rotate(-40deg)}}
+@keyframes lfDust{0%{transform:translate(0,0) scale(.6);opacity:0}30%{opacity:.6}100%{transform:translate(-30px,-40px) scale(1.4);opacity:0}}
+@keyframes lfBeacon{0%,49%{fill:#F2C230}50%,100%{fill:#7A5638}}
+.lf-arm{transform-origin:250px 170px;animation:lfArm 4s ease-in-out infinite}
+.lf-bucket{transform-origin:400px 120px;animation:lfBucket 4s ease-in-out infinite}
+.lf-dust{transform-box:fill-box;animation:lfDust 4s ease-out infinite}
+.lf-beacon{animation:lfBeacon 1s steps(1) infinite}
+.lf-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:6px;font:700 16px 'Inter Tight',sans-serif;text-decoration:none;border:0;cursor:pointer}
+.lf-btn:focus-visible,.lf-stage:focus-visible{outline:3px solid var(--hivis);outline-offset:3px}
+.lf-stage{flex:1 1 140px;min-height:64px;padding:10px 14px;border-radius:6px;cursor:pointer;font:700 15px 'Inter Tight',sans-serif;text-align:left;display:flex;flex-direction:column;gap:2px}
+.lf-nav a{color:var(--sand);text-decoration:none;font-weight:600}
+.lf-nav a:hover{color:var(--hivis)}
+@media (max-width:820px){.lf-nav{display:none !important}}
+@media (prefers-reduced-motion:reduce){.lf-arm,.lf-bucket,.lf-dust,.lf-beacon{animation:none}}
+</style>
+
+</head>
+<body>
+<template id="dc-tpl">
+
+
+<div class="lf">
+  <div style="background: var(--char); color: var(--sand)">
+    <header style="max-width: 1300px; margin: 0 auto; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px">
+      <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--sand)">
+        <span class="lf-d" style="display: inline-grid; place-items: center; width: 46px; height: 46px; background: var(--hivis); color: var(--char); font-size: 20px; border-radius: 6px">LF</span>
+        <span style="font-weight: 800; font-size: 17px; line-height: 1.1">LF Construction<span style="display: block; font-weight: 600; font-size: 13px; opacity: .7">&amp; Excavating · Yakima</span></span>
+      </a>
+      <nav class="lf-nav" aria-label="Main" style="display: flex; gap: 28px"><a href="#build">How we build</a><a href="#work">What we do</a><a href="#quote">Quote</a></nav>
+      <a class="lf-btn" href="tel:+15098595594" style="min-height: 46px; padding: 0 18px; background: var(--hivis); color: var(--char); white-space: nowrap">509-859-5594</a>
+    </header>
+
+    <section id="top" style="max-width: 1300px; margin: 0 auto; padding: 30px 24px 0; display: flex; flex-direction: column; gap: 22px">
+      <p style="margin: 0; align-self: flex-start; padding: 8px 14px; border-radius: 6px; background: #35322C; font-weight: 600; font-size: 14px"><span style="color: var(--hivis)">★ 5.0</span> from 40 Google reviews</p>
+      <h1 class="lf-d" style="margin: 0; font-size: clamp(48px, 8.4vw, 132px); line-height: .9">From the first dig to the final nail.</h1>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 30px; align-items: end">
+        <div style="display: flex; flex-direction: column; gap: 22px; padding-bottom: 40px">
+          <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #CFC6B5; max-width: 520px">Excavating, foundations, framing, roofing, siding and interiors in Yakima County. Call Alex and talk it through.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px">
+            <a class="lf-btn" href="#quote" style="background: var(--clay); color: #fff">Get a quote</a>
+            <a class="lf-btn" href="#build" style="background: transparent; color: var(--sand); box-shadow: inset 0 0 0 2px #5A554B">See how we build</a>
+          </div>
+        </div>
+        <svg role="img" aria-label="An excavator digging and dropping dirt on a pile" viewBox="0 0 560 262" style="display: block; width: 100%; height: auto">
+          <path d="M440 262 Q490 200 540 262Z" fill="#8E6644"/>
+          <g fill="#A47A54"><circle class="lf-dust" cx="470" cy="230" r="10"/><circle class="lf-dust" style="animation-delay:.6s" cx="500" cy="220" r="8"/><circle class="lf-dust" style="animation-delay:1.2s" cx="485" cy="240" r="7"/></g>
+          <rect x="70" y="222" width="220" height="40" rx="20" fill="#24221E" stroke="#3E3A33" stroke-width="6"/>
+          <g fill="#5A554B"><circle cx="100" cy="242" r="10"/><circle cx="140" cy="242" r="10"/><circle cx="180" cy="242" r="10"/><circle cx="220" cy="242" r="10"/><circle cx="260" cy="242" r="10"/></g>
+          <rect x="90" y="150" width="190" height="66" rx="8" fill="#F2C230"/>
+          <path d="M110 150 V96 H190 L214 150Z" fill="#F2C230"/>
+          <path d="M122 106 H184 L202 144 H122Z" fill="#8FB6C9"/>
+          <rect x="150" y="84" width="16" height="12" rx="3" class="lf-beacon"/>
+          <g class="lf-arm">
+            <path d="M240 170 L360 70 L380 86 L260 186Z" fill="#E3B220"/>
+            <path d="M360 70 L410 120 L396 134 L346 84Z" fill="#E3B220"/>
+            <g class="lf-bucket"><path d="M396 112 L440 128 L430 170 L392 150Z" fill="#3E3A33"/><path d="M430 170 l-8 10 M420 166 l-8 10 M410 160 l-8 10" stroke="#3E3A33" stroke-width="4"/></g>
+          </g>
+          <circle cx="250" cy="176" r="12" fill="#24221E"/>
+        </svg>
+      </div>
+    </section>
+    <div aria-hidden="true" style="height: 36px; background: linear-gradient(#7A5638, #5E422A)"></div>
+  </div>
+
+  <section id="build" style="max-width: 1300px; margin: 0 auto; padding: 96px 24px">
+    <h2 class="lf-d" style="margin: 0 0 14px; font-size: clamp(40px, 5.6vw, 76px); line-height: .92">Watch a build go up</h2>
+    <p style="margin: 0 0 30px; font-size: 18px; line-height: 1.6; color: #5A554B; max-width: 600px">Tap through each stage. We can take on the whole project, or just the part you need.</p>
+    <div role="group" aria-label="Build stage" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px">
+      <sc-for list="{{ stages }}" as="s" hint-placeholder-count="5"><button type="button" class="lf-stage" aria-pressed="{{ s.on }}" onClick="{{ s.pick }}" style="{{ s.style }}"><span style="font-size: 12px; opacity: .75">Stage {{ s.n }}</span>{{ s.name }}</button></sc-for>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px; align-items: stretch">
+      <div style="border-radius: 10px; background: #F7F1E6; border: 2px solid #D9CCB4; padding: 20px">
+        <svg role="img" aria-label="{{ alt }}" viewBox="0 0 520 320" style="display: block; width: 100%; height: auto">
+          <path d="M0 250 H520 V320 H0Z" fill="#7A5638"/>
+          <path d="M90 250 H430 V270 H90Z" fill="#5A3E28" style="opacity: {{ s0 }}"/>
+          <rect x="100" y="236" width="320" height="18" fill="#9A958C" style="opacity: {{ s1 }}; transition: opacity .4s"/>
+          <g stroke="#C9A066" stroke-width="7" style="opacity: {{ s2 }}; transition: opacity .4s"><path d="M110 236 V130 M170 236 V130 M230 236 V130 M290 236 V130 M350 236 V130 M410 236 V130 M106 132 H414"/><path d="M100 134 L260 50 L420 134" fill="none"/></g>
+          <g style="opacity: {{ s3 }}; transition: opacity .4s"><path d="M90 140 L260 44 L430 140 Z" fill="#B5532F"/><rect x="106" y="138" width="308" height="98" fill="#56633A"/></g>
+          <g style="opacity: {{ s4 }}; transition: opacity .4s"><rect x="140" y="160" width="60" height="44" fill="#F2C230"/><rect x="320" y="160" width="60" height="44" fill="#F2C230"/><rect x="236" y="168" width="48" height="68" fill="#24221E"/></g>
+        </svg>
+      </div>
+      <div style="border-radius: 10px; background: var(--char); color: var(--sand); padding: 30px; display: flex; flex-direction: column; gap: 14px">
+        <span class="lf-d" style="font-size: 64px; line-height: 1; color: var(--hivis)">0{{ curN }}</span>
+        <h3 style="margin: 0; font-size: 28px">{{ curName }}</h3>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #CFC6B5">{{ curDesc }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" style="background: var(--olive); color: var(--sand)">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <h2 class="lf-d" style="margin: 0; font-size: clamp(40px, 5.6vw, 76px); line-height: .92">Built your way</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #DCE2CC; max-width: 480px">Custom homes, additions and repairs, with options to match the look you want and the budget you have.</p>
+        <ul style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px">
+          <li style="padding: 10px 16px; border-radius: 6px; background: rgba(0,0,0,.18); font-weight: 600">Excavating</li><li style="padding: 10px 16px; border-radius: 6px; background: rgba(0,0,0,.18); font-weight: 600">Foundations</li><li style="padding: 10px 16px; border-radius: 6px; background: rgba(0,0,0,.18); font-weight: 600">Framing</li><li style="padding: 10px 16px; border-radius: 6px; background: rgba(0,0,0,.18); font-weight: 600">Custom homes</li><li style="padding: 10px 16px; border-radius: 6px; background: rgba(0,0,0,.18); font-weight: 600">Roofing</li><li style="padding: 10px 16px; border-radius: 6px; background: rgba(0,0,0,.18); font-weight: 600">Siding</li><li style="padding: 10px 16px; border-radius: 6px; background: rgba(0,0,0,.18); font-weight: 600">Interiors</li>
+        </ul>
+      </div>
+      <div style="display: grid; gap: 16px">
+        <figure style="margin: 0; padding: 30px; border-radius: 10px; background: var(--sand); color: var(--char); display: flex; flex-direction: column; gap: 14px"><span aria-hidden="true" style="color: var(--clay)">★★★★★</span><blockquote style="margin: 0; font-size: 24px; line-height: 1.35; font-weight: 700">"Amazing communication and hands down the best quality work in Yakima County."</blockquote><figcaption style="font-size: 14px; color: #5A554B">Google review</figcaption></figure>
+        <figure style="margin: 0; padding: 30px; border-radius: 10px; background: var(--hivis); color: var(--char); display: flex; flex-direction: column; gap: 14px"><span aria-hidden="true">★★★★★</span><blockquote style="margin: 0; font-size: 24px; line-height: 1.35; font-weight: 700">"Offers various options of customization and pricing!"</blockquote><figcaption style="font-size: 14px; color: #5A554B">Google review</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote" style="background: var(--char); color: var(--sand)">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 90px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 40px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h2 class="lf-d" style="margin: 0; font-size: clamp(40px, 5.6vw, 76px); line-height: .92">Let's talk about your project</h2>
+        <p style="margin: 0; font-size: 18px; color: #CFC6B5">305 N 8th St, Yakima, WA · ask for Alex</p>
+        <p style="margin: 0; font-size: 26px; font-weight: 800"><a href="tel:+15098595594" style="color: var(--hivis)">509-859-5594</a></p>
+        <p style="margin: 0; color: #CFC6B5">lfconstructionalex@gmail.com</p>
+      </div>
+      <form aria-label="Project quote" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 14px; background: var(--sand); color: var(--char); padding: 26px; border-radius: 10px">
+        <label style="display: grid; gap: 8px; font-weight: 700">Name<input type="text" style="min-height: 52px; padding: 0 14px; border: 2px solid #D9CCB4; border-radius: 6px; font: 400 16px 'Inter Tight', sans-serif"></label>
+        <label style="display: grid; gap: 8px; font-weight: 700">Phone<input type="tel" style="min-height: 52px; padding: 0 14px; border: 2px solid #D9CCB4; border-radius: 6px; font: 400 16px 'Inter Tight', sans-serif"></label>
+        <label style="grid-column: 1 / -1; display: grid; gap: 8px; font-weight: 700">Type of project<select style="min-height: 52px; padding: 0 14px; border: 2px solid #D9CCB4; border-radius: 6px; font: 400 16px 'Inter Tight', sans-serif"><option>Custom home</option><option>Excavating or site work</option><option>Foundation</option><option>Roofing or siding</option><option>Remodel or interiors</option></select></label>
+        <button type="button" class="lf-btn" style="grid-column: 1 / -1; background: var(--clay); color: #fff">Request my quote</button>
+      </form>
+    </div>
+  </section>
+</div>
+</template>
+<div id="dc-root"></div>
+<div role="note" style="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;max-width:calc(100% - 24px);padding:9px 16px;border-radius:999px;background:rgba(20,20,20,.88);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">Sample design by Hashay Patel for LF Construction &amp; Excavating. Not the official LF Construction &amp; Excavating website.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morphdom/2.7.4/morphdom-umd.min.js"></script>
+<script>
+(function(){
+  class DCLogic{constructor(p){this.props=p||{};this.state={}}
+    setState(s){Object.assign(this.state,typeof s==='function'?s(this.state):s);render()}
+    forceUpdate(){render()}}
+  window.DCLogic=DCLogic;
+  var TPL=document.getElementById('dc-tpl').innerHTML, root=document.getElementById('dc-root'), comp, fns=[];
+  function look(p,c){var cur=c;p.split('.').forEach(function(k){cur=(cur!=null&&typeof cur==='object')?cur[k]:undefined});return cur}
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+  function fill(t,c){
+    t=t.replace(/\son(\w+)="\{\{\s*([\w.$]+)\s*\}\}"/g,function(m,ev,p){var f=look(p,c);if(typeof f!=='function')return '';fns.push(f);return ' on'+ev.toLowerCase()+'="__dc('+(fns.length-1)+',event)"'});
+    return t.replace(/\{\{\s*([\w.$]+)\s*\}\}/g,function(m,p){return esc(look(p,c))});
+  }
+  function build(){
+    fns=[];var v=comp.renderVals();
+    var t=TPL.replace(/<sc-for([^>]*)>([\s\S]*?)<\/sc-for>/g,function(m,a,inner){
+      var l=(a.match(/list="\{\{\s*([\w.]+)\s*\}\}"/)||[])[1],as=(a.match(/as="(\w+)"/)||[])[1];
+      var arr=look(l,v)||[];return arr.map(function(it){var c=Object.assign({},v);c[as]=it;return fill(inner,c)}).join('');
+    });
+    return fill(t,v);
+  }
+  window.__dc=function(i,e){if(fns[i])fns[i](e)};
+  function render(){var n=document.createElement('div');n.id='dc-root';n.innerHTML=build();
+    if(window.morphdom){morphdom(root,n)}else{root.innerHTML=n.innerHTML}}
+  window.__dcStart=function(C){comp=new C({});render()};
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { i: 2 }; }
+  renderVals() {
+    var self = this, cur = this.state.i;
+    var st = [
+      { name: "Excavating", desc: "Site cleared, levelled and dug out to plan, with the right equipment for the ground." },
+      { name: "Foundation", desc: "Forms set and concrete poured for a solid, square base that everything else depends on." },
+      { name: "Framing", desc: "Walls and roof structure go up, and the house starts to look like a house." },
+      { name: "Roofing & siding", desc: "The shell is closed in against Yakima weather, finished in the look you picked." },
+      { name: "Interiors", desc: "Doors, windows and finishing work, until it's ready to move into." }
+    ];
+    var v = {
+      stages: st.map(function (x, i) { var on = i === cur; return { n: i + 1, name: x.name, on: on ? "true" : "false", pick: function () { self.setState({ i: i }); }, style: on ? "background:#24221E;color:#F2C230;border:2px solid #24221E" : (i < cur ? "background:#D9CCB4;color:#24221E;border:2px solid #D9CCB4" : "background:transparent;color:#24221E;border:2px solid #B9AD96") }; }),
+      curN: cur + 1, curName: st[cur].name, curDesc: st[cur].desc,
+      alt: "House diagram at the " + st[cur].name.toLowerCase() + " stage"
+    };
+    for (var k = 0; k < 5; k++) v["s" + k] = k <= cur ? 1 : 0;
+    return v;
+  }
+}
+
+__dcStart(Component);</script>
+</body>
+</html>

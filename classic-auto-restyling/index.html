@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample homepage for Classic Auto Restyling</title>
+<meta name="description" content="A sample homepage design made for Classic Auto Restyling by Hashay Patel. Not the official Classic Auto Restyling website.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3EADB}
+*{box-sizing:border-box}
+.ca{--cream:#F3EADB;--hide:#5A1E1B;--hide2:#7A2C25;--tan:#C88F55;--ink:#1F1513;--stitch:#F0D9B0;font-family:'Work Sans',system-ui,sans-serif;color:var(--ink);background:var(--cream)}
+.ca-fat{font-family:'Abril Fatface',Georgia,serif;font-weight:400;letter-spacing:.005em;line-height:.98}
+.ca-quilt{background-color:var(--hide);background-image:linear-gradient(45deg,rgba(0,0,0,.18) 1px,transparent 1px),linear-gradient(-45deg,rgba(0,0,0,.18) 1px,transparent 1px),radial-gradient(circle at 50% 50%,rgba(255,255,255,.07),transparent 60%);background-size:46px 46px,46px 46px,46px 46px}
+@keyframes caStitch{to{stroke-dashoffset:-40}}
+@keyframes caSheen{0%{transform:translateX(-120%) skewX(-20deg)}100%{transform:translateX(320%) skewX(-20deg)}}
+.ca-stitch{stroke-dasharray:8 6;animation:caStitch 3s linear infinite}
+.ca-sheen{animation:caSheen 5s ease-in-out infinite}
+.ca-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 28px;border-radius:999px;font:600 16px 'Work Sans',sans-serif;text-decoration:none;border:0;cursor:pointer}
+.ca-btn:focus-visible,.ca-sw:focus-visible,.ca-tab:focus-visible{outline:3px solid var(--tan);outline-offset:3px}
+.ca-sw{width:54px;height:54px;border-radius:50%;cursor:pointer;border:3px solid transparent}
+.ca-tab{min-height:48px;padding:0 20px;border-radius:999px;cursor:pointer;font:600 15px 'Work Sans',sans-serif}
+.ca-nav a{color:var(--cream);text-decoration:none;font-weight:500}
+.ca-nav a:hover{color:var(--stitch)}
+@media (max-width:820px){.ca-nav{display:none !important}}
+@media (max-width:600px){.ca-sub{display:none}}
+@media (prefers-reduced-motion:reduce){.ca-stitch,.ca-sheen{animation:none}}
+</style>
+
+</head>
+<body>
+<template id="dc-tpl">
+
+
+<div class="ca">
+  <section id="top" class="ca-quilt" style="position: relative; overflow: hidden; color: var(--cream)">
+    <div aria-hidden="true" style="position: absolute; inset: 14px; border: 2px dashed rgba(240,217,176,.45); border-radius: 26px; pointer-events: none"></div>
+    <header style="position: relative; max-width: 1280px; margin: 0 auto; padding: 30px 40px 10px; display: flex; justify-content: space-between; align-items: center; gap: 16px">
+      <a href="#top" style="display: flex; flex-direction: column; text-decoration: none; color: var(--cream); line-height: 1">
+        <span class="ca-fat" style="font-size: clamp(22px, 5.6vw, 30px)">Classic Auto Restyling</span>
+        <span class="ca-sub" style="font-size: 13px; letter-spacing: .08em; margin-top: 6px; color: var(--stitch)">Abilene, Texas · over 25 years</span>
+      </a>
+      <nav class="ca-nav" aria-label="Main" style="display: flex; gap: 30px"><a href="#studio">Design your interior</a><a href="#work">What we do</a><a href="#visit">Visit</a></nav>
+      <a class="ca-btn" href="tel:+13257932277" style="min-height: 46px; padding: 0 16px; white-space: nowrap; background: var(--stitch); color: var(--hide)">Call us</a>
+    </header>
+    <div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 30px 40px 90px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr)); gap: 40px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 24px">
+        <p style="margin: 0; align-self: flex-start; padding: 8px 16px; border-radius: 999px; background: rgba(240,217,176,.15); font-weight: 600">★ 4.7 from 139 Google reviews</p>
+        <h1 class="ca-fat" style="margin: 0; font-size: clamp(56px, 7.4vw, 108px)">Interiors stitched to outlast the truck.</h1>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #EBD6C8; max-width: 520px">Complete leather interiors, seat recovers and custom restyling for trucks, classics and equipment. Hand-finished in Abilene by a shop that's been doing it for over 25 years.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a class="ca-btn" href="#studio" style="background: var(--stitch); color: var(--hide)">Design your interior</a>
+          <a class="ca-btn" href="tel:+13257932277" style="background: transparent; color: var(--cream); box-shadow: inset 0 0 0 2px rgba(240,217,176,.6)">Call for a quote</a>
+        </div>
+      </div>
+      <svg role="img" aria-label="A diamond-stitched leather truck seat" viewBox="0 0 520 520" style="width: 100%; height: auto; filter: drop-shadow(0 40px 50px rgba(0,0,0,.45))">
+        <defs>
+          <linearGradient id="caL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C88F55"/><stop offset="1" stop-color="#8A5530"/></linearGradient>
+          <pattern id="caD" width="36" height="36" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="36" height="36" fill="url(#caL)"/><rect x="1" y="1" width="34" height="34" fill="none" stroke="#F0D9B0" stroke-width="1.6" stroke-dasharray="4 3"/></pattern>
+          <clipPath id="caBack"><path d="M150 40 Q260 10 370 40 Q400 160 380 290 L140 290 Q120 160 150 40Z"/></clipPath>
+        </defs>
+        <path d="M150 40 Q260 10 370 40 Q400 160 380 290 L140 290 Q120 160 150 40Z" fill="url(#caD)"/>
+        <g clip-path="url(#caBack)"><rect class="ca-sheen" x="100" y="0" width="60" height="320" fill="rgba(255,255,255,.22)"/></g>
+        <path class="ca-stitch" d="M162 52 Q260 26 358 52 Q386 160 368 280 L152 280 Q134 160 162 52Z" fill="none" stroke="#F0D9B0" stroke-width="2.5"/>
+        <path d="M110 300 Q260 270 410 300 L430 400 Q260 440 90 400Z" fill="#7A2C25"/>
+        <path d="M120 310 Q260 284 400 310 L414 392 Q260 424 106 392Z" fill="url(#caD)"/>
+        <path class="ca-stitch" d="M128 318 Q260 294 392 318 L404 386 Q260 414 116 386Z" fill="none" stroke="#F0D9B0" stroke-width="2.5"/>
+        <rect x="236" y="420" width="48" height="70" rx="8" fill="#1F1513"/><rect x="170" y="482" width="180" height="16" rx="8" fill="#1F1513"/>
+        <rect x="200" y="0" width="120" height="44" rx="20" fill="#7A2C25"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="studio" style="max-width: 1280px; margin: 0 auto; padding: 100px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 48px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 22px">
+      <h2 class="ca-fat" style="margin: 0; font-size: clamp(44px, 5.4vw, 74px); color: var(--hide)">Design your interior</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #5A4A44; max-width: 480px">Pick a material and a colour to see the idea come together. Bring the picture in and we'll match it on the real thing.</p>
+      <div role="tablist" aria-label="Material" style="display: flex; flex-wrap: wrap; gap: 8px">
+        <sc-for list="{{ mats }}" as="m" hint-placeholder-count="3"><button type="button" role="tab" class="ca-tab" aria-selected="{{ m.sel }}" onClick="{{ m.pick }}" style="{{ m.style }}">{{ m.name }}</button></sc-for>
+      </div>
+      <div role="radiogroup" aria-label="Colour" style="display: flex; gap: 12px; flex-wrap: wrap">
+        <sc-for list="{{ cols }}" as="c" hint-placeholder-count="5"><button type="button" role="radio" class="ca-sw" aria-checked="{{ c.sel }}" aria-label="{{ c.name }}" onClick="{{ c.pick }}" style="{{ c.style }}"></button></sc-for>
+      </div>
+      <p style="margin: 0; font-weight: 600">{{ cur.label }}</p>
+    </div>
+    <figure style="margin: 0; border-radius: 30px; background: #fff; padding: 30px; box-shadow: 0 30px 60px -40px rgba(90,30,27,.6)">
+      <svg role="img" aria-label="{{ cur.label }} seat preview" viewBox="0 0 400 300" style="width: 100%; height: auto">
+        <defs><pattern id="caPrev" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="28" height="28" fill="{{ cur.hex }}"/><rect x="1" y="1" width="26" height="26" fill="none" stroke="{{ cur.thread }}" stroke-width="{{ cur.stitchW }}" stroke-dasharray="3 3"/></pattern></defs>
+        <rect width="400" height="300" rx="20" fill="#F7F1E7"/>
+        <path d="M60 40 Q200 10 340 40 L330 170 L70 170Z" fill="url(#caPrev)"/>
+        <path d="M40 180 Q200 160 360 180 L370 250 Q200 280 30 250Z" fill="url(#caPrev)"/>
+        <path d="M60 40 Q200 10 340 40 L330 170 L70 170Z" fill="rgba(255,255,255,{{ cur.gloss }})"/>
+      </svg>
+      <figcaption style="margin-top: 14px; display: flex; justify-content: space-between; font-weight: 600"><span>{{ cur.matName }}</span><span style="color: #8A6A5A">{{ cur.colName }}</span></figcaption>
+    </figure>
+  </section>
+
+  <section id="work" style="background: var(--hide); color: var(--cream)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 100px 24px">
+      <h2 class="ca-fat" style="margin: 0 0 40px; font-size: clamp(44px, 5.4vw, 74px)">From one torn seat to the whole cab</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px">
+        <sc-for list="{{ work }}" as="w" hint-placeholder-count="4">
+          <article style="border-radius: 22px; padding: 28px; background: rgba(240,217,176,.08); border: 1.5px dashed rgba(240,217,176,.4); display: flex; flex-direction: column; gap: 12px; min-height: 230px">
+            <span aria-hidden="true" style="font-size: 34px">{{ w.icon }}</span>
+            <h3 class="ca-fat" style="margin: 0; font-size: 28px; color: var(--stitch)">{{ w.name }}</h3>
+            <p style="margin: 0; line-height: 1.6; color: #EBD6C8">{{ w.desc }}</p>
+          </article>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" style="max-width: 1280px; margin: 0 auto; padding: 100px 24px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 18px">
+      <div style="display: flex; flex-direction: column; justify-content: center; gap: 8px"><span class="ca-fat" style="font-size: 110px; color: var(--hide); line-height: .9">4.7</span><span style="font-weight: 600">139 Google reviews</span></div>
+      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="3">
+        <figure style="margin: 0; padding: 28px; border-radius: 22px; background: #fff; border: 1.5px dashed #D8B99A; display: flex; flex-direction: column; gap: 14px">
+          <span aria-hidden="true" style="color: var(--tan)">★★★★★</span>
+          <blockquote class="ca-fat" style="margin: 0; font-size: 24px; line-height: 1.25; color: var(--hide)">"{{ r.q }}"</blockquote>
+          <figcaption style="margin-top: auto; color: #8A6A5A; font-size: 14px">Google review</figcaption>
+        </figure>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="visit" style="background: var(--ink); color: var(--cream)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 90px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <h2 class="ca-fat" style="margin: 0; font-size: clamp(42px, 5vw, 66px)">151 S Pioneer Dr</h2>
+        <p style="margin: 0; font-size: 18px; color: #CDB8AA">Abilene, TX 79605 · Monday to Friday, 8 am – 5 pm</p>
+        <p style="margin: 6px 0 0; font-size: 24px; font-weight: 700"><a href="tel:+13257932277" style="color: var(--stitch)">(325) 793-2277</a></p>
+      </div>
+      <form aria-label="Request a quote" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 14px; background: #2B1E1B; padding: 28px; border-radius: 22px">
+        <label style="display: grid; gap: 8px; font-weight: 600">Name<input type="text" style="min-height: 52px; padding: 0 14px; border: 0; border-radius: 12px; font: 400 16px 'Work Sans', sans-serif"></label>
+        <label style="display: grid; gap: 8px; font-weight: 600">Phone<input type="tel" style="min-height: 52px; padding: 0 14px; border: 0; border-radius: 12px; font: 400 16px 'Work Sans', sans-serif"></label>
+        <label style="grid-column: 1 / -1; display: grid; gap: 8px; font-weight: 600">Vehicle and what you'd like done<textarea rows="3" style="padding: 12px 14px; border: 0; border-radius: 12px; font: 400 16px 'Work Sans', sans-serif"></textarea></label>
+        <button type="button" class="ca-btn" style="grid-column: 1 / -1; background: var(--stitch); color: var(--hide)">Request my quote</button>
+      </form>
+    </div>
+  </section>
+</div>
+</template>
+<div id="dc-root"></div>
+<div role="note" style="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;max-width:calc(100% - 24px);padding:9px 16px;border-radius:999px;background:rgba(20,20,20,.88);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">Sample design by Hashay Patel for Classic Auto Restyling. Not the official Classic Auto Restyling website.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morphdom/2.7.4/morphdom-umd.min.js"></script>
+<script>
+(function(){
+  class DCLogic{constructor(p){this.props=p||{};this.state={}}
+    setState(s){Object.assign(this.state,typeof s==='function'?s(this.state):s);render()}
+    forceUpdate(){render()}}
+  window.DCLogic=DCLogic;
+  var TPL=document.getElementById('dc-tpl').innerHTML, root=document.getElementById('dc-root'), comp, fns=[];
+  function look(p,c){var cur=c;p.split('.').forEach(function(k){cur=(cur!=null&&typeof cur==='object')?cur[k]:undefined});return cur}
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+  function fill(t,c){
+    t=t.replace(/\son(\w+)="\{\{\s*([\w.$]+)\s*\}\}"/g,function(m,ev,p){var f=look(p,c);if(typeof f!=='function')return '';fns.push(f);return ' on'+ev.toLowerCase()+'="__dc('+(fns.length-1)+',event)"'});
+    return t.replace(/\{\{\s*([\w.$]+)\s*\}\}/g,function(m,p){return esc(look(p,c))});
+  }
+  function build(){
+    fns=[];var v=comp.renderVals();
+    var t=TPL.replace(/<sc-for([^>]*)>([\s\S]*?)<\/sc-for>/g,function(m,a,inner){
+      var l=(a.match(/list="\{\{\s*([\w.]+)\s*\}\}"/)||[])[1],as=(a.match(/as="(\w+)"/)||[])[1];
+      var arr=look(l,v)||[];return arr.map(function(it){var c=Object.assign({},v);c[as]=it;return fill(inner,c)}).join('');
+    });
+    return fill(t,v);
+  }
+  window.__dc=function(i,e){if(fns[i])fns[i](e)};
+  function render(){var n=document.createElement('div');n.id='dc-root';n.innerHTML=build();
+    if(window.morphdom){morphdom(root,n)}else{root.innerHTML=n.innerHTML}}
+  window.__dcStart=function(C){comp=new C({});render()};
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { m: 0, c: 1 }; }
+  renderVals() {
+    var self = this;
+    var mats = [{ n: "Leather", gloss: ".14", sw: 1.6 }, { n: "Vinyl", gloss: ".22", sw: 1.2 }, { n: "Cloth", gloss: "0", sw: 1 }];
+    var cols = [
+      { n: "Saddle tan", hex: "#B97A45", th: "#F0D9B0" }, { n: "Oxblood", hex: "#6E2420", th: "#F0D9B0" },
+      { n: "Midnight black", hex: "#22201F", th: "#C88F55" }, { n: "Bone", hex: "#E5D8C0", th: "#7A2C25" }, { n: "Slate grey", hex: "#55595E", th: "#E9E3D8" }
+    ];
+    var m = mats[this.state.m], c = cols[this.state.c];
+    return {
+      mats: mats.map(function (x, i) { var on = i === self.state.m; return { name: x.n, sel: on ? "true" : "false", pick: function () { self.setState({ m: i }); }, style: on ? "background:#5A1E1B;color:#F3EADB;border:2px solid #5A1E1B" : "background:#fff;color:#1F1513;border:2px solid #E2CBB6" }; }),
+      cols: cols.map(function (x, i) { var on = i === self.state.c; return { name: x.n, sel: on ? "true" : "false", pick: function () { self.setState({ c: i }); }, style: "background:" + x.hex + ";" + (on ? "box-shadow:0 0 0 3px #F3EADB,0 0 0 6px #5A1E1B" : "box-shadow:0 0 0 1px #D8C6B4") }; }),
+      cur: { hex: c.hex, thread: c.th, gloss: m.gloss, stitchW: m.sw, matName: m.n + ", diamond stitch", colName: c.n, label: c.n + " " + m.n.toLowerCase() + " with contrast stitching" },
+      work: [
+        { icon: "🪑", name: "Seat recovers", desc: "Torn, cracked or sun-baked seats recovered to look new, from pickups to equipment." },
+        { icon: "🐄", name: "Leather interiors", desc: "Complete leather interiors, cut and sewn to fit, with the stitching you choose." },
+        { icon: "🚘", name: "Restyling", desc: "Two-tone looks, contrast stitching and custom touches that make the cab yours." },
+        { icon: "🚜", name: "Equipment seats", desc: "Tractor, mower and heavy-equipment seats rebuilt to handle the work." }
+      ],
+      reviews: [{ q: "Couldn't be happier with the workmanship and fantastic service." }, { q: "His staff I encountered were super friendly as well!" }]
+    };
+  }
+}
+
+__dcStart(Component);</script>
+</body>
+</html>

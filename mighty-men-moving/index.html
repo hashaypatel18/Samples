@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample homepage for Mighty Men Moving and Hauling</title>
+<meta name="description" content="A sample homepage design made for Mighty Men Moving and Hauling by Hashay Patel. Not the official Mighty Men Moving and Hauling website.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFF6EC}
+*{box-sizing:border-box}
+.mm{--paper:#FFF6EC;--brick:#D23C25;--dark:#1E2328;--box:#D9A86B;--box2:#B98447;--prairie:#F2C14E;--sky:#BFE3EA;font-family:'League Spartan',system-ui,sans-serif;color:var(--dark);background:var(--paper)}
+@keyframes mmDrive{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes mmRoad{to{stroke-dashoffset:-80}}
+@keyframes mmDrop{0%{transform:translateY(-40px);opacity:0}30%{opacity:1}60%,100%{transform:translateY(0);opacity:1}}
+@keyframes mmSpin{to{transform:rotate(360deg)}}
+.mm-truck{animation:mmDrive .5s ease-in-out infinite}
+.mm-road{stroke-dasharray:40 40;animation:mmRoad .8s linear infinite}
+.mm-drop{animation:mmDrop 3s ease-out infinite}
+.mm-w{transform-box:fill-box;transform-origin:center;animation:mmSpin .7s linear infinite}
+.mm-btn{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 28px;border-radius:12px;font:700 17px 'League Spartan',sans-serif;text-decoration:none;border:0;cursor:pointer}
+.mm-btn:focus-visible,.mm-size:focus-visible{outline:3px solid var(--prairie);outline-offset:3px}
+.mm-size{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:18px;border-radius:16px;cursor:pointer;font:700 18px 'League Spartan',sans-serif;text-align:left}
+.mm-nav a{color:var(--dark);text-decoration:none;font-weight:600}
+.mm-nav a:hover{color:var(--brick)}
+@media (max-width:820px){.mm-nav{display:none !important}}
+@media (max-width:600px){.mm-sub{display:none}}
+@media (prefers-reduced-motion:reduce){.mm-truck,.mm-road,.mm-drop,.mm-w{animation:none}}
+</style>
+
+</head>
+<body>
+<template id="dc-tpl">
+
+
+<div class="mm">
+  <header style="max-width: 1280px; margin: 0 auto; padding: 22px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--dark)">
+      <svg aria-hidden="true" width="50" height="50" viewBox="0 0 50 50"><rect x="4" y="12" width="30" height="26" rx="3" fill="#D9A86B"/><path d="M4 20 H34" stroke="#B98447" stroke-width="3"/><path d="M34 22 H42 L48 30 V38 H34Z" fill="#D23C25"/><circle cx="14" cy="40" r="5" fill="#1E2328"/><circle cx="40" cy="40" r="5" fill="#1E2328"/></svg>
+      <span style="display: flex; flex-direction: column; line-height: 1"><span style="font-size: 26px; font-weight: 900; letter-spacing: -.02em">MIGHTY MEN</span><span style="font-size: 14px; font-weight: 600; color: var(--brick); white-space: nowrap">Moving &amp; Hauling<span class="mm-sub"> · Lethbridge</span></span></span>
+    </a>
+    <nav class="mm-nav" aria-label="Main" style="display: flex; gap: 30px"><a href="#size">Plan your move</a><a href="#reviews">Reviews</a><a href="#book">Book</a></nav>
+    <a class="mm-btn" href="tel:+14036356069" style="min-height: 48px; padding: 0 16px; white-space: nowrap; background: var(--brick); color: #fff">Call Matt</a>
+  </header>
+
+  <section id="top" style="position: relative; overflow: hidden; background: linear-gradient(180deg, #BFE3EA 0%, #E8F4F1 55%, #FFF6EC 100%)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 30px; align-items: start; position: relative; z-index: 2">
+      <div style="display: flex; flex-direction: column; gap: 22px">
+        <p style="margin: 0; align-self: flex-start; padding: 8px 16px; border-radius: 999px; background: #fff; font-weight: 700">★ 4.8 · 71 Google reviews · locally owned</p>
+        <h1 style="margin: 0; font-size: clamp(60px, 8vw, 118px); line-height: .86; font-weight: 900; letter-spacing: -.035em; text-transform: uppercase">Heavy lifting. Light&nbsp;prices.</h1>
+        <p style="margin: 0; font-size: 20px; line-height: 1.55; max-width: 520px; color: #3D454D">Home and office moves, junk hauling and deliveries across Lethbridge and southern Alberta, by a crew customers call "personable, kind and efficient".</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a class="mm-btn" href="#size" style="background: var(--brick); color: #fff">Plan my move</a>
+          <a class="mm-btn" href="tel:+14036356069" style="background: var(--dark); color: #fff">Call Matt</a>
+        </div>
+      </div>
+      <div style="justify-self: end; background: var(--dark); color: #fff; border-radius: 20px; padding: 22px 24px; width: min(100%, 340px); transform: rotate(-2deg); box-shadow: 0 24px 40px -24px rgba(30,35,40,.7)">
+        <p style="margin: 0 0 10px; font-weight: 800; color: var(--prairie)">Moving day checklist</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; font-size: 16px">
+          <li>☑ Boxes loaded with care</li><li>☑ Furniture wrapped and padded</li><li>☑ Unloaded where you want it</li><li>☐ Kettle on in the new place</li>
+        </ul>
+      </div>
+    </div>
+    <svg role="img" aria-label="A Mighty Men moving truck driving across the prairie with boxes stacked in the back" viewBox="0 0 1440 360" style="display: block; width: 100%; height: auto; margin-top: -40px">
+      <path d="M0 210 Q360 170 720 200 T1440 190 V360 H0Z" fill="#F2C14E" opacity=".55"/>
+      <path d="M0 240 Q400 215 800 238 T1440 228 V360 H0Z" fill="#E7B243" opacity=".7"/>
+      <rect y="276" width="1440" height="84" fill="#3B4249"/>
+      <line class="mm-road" x1="0" y1="318" x2="1440" y2="318" stroke="#FFF6EC" stroke-width="6"/>
+      <g class="mm-truck" transform="translate(520 92)">
+        <rect x="0" y="40" width="330" height="150" rx="12" fill="#FFF6EC" stroke="#1E2328" stroke-width="4"/>
+        <text x="24" y="104" font-family="League Spartan, sans-serif" font-weight="900" font-size="44" fill="#D23C25">MIGHTY MEN</text>
+        <text x="26" y="140" font-family="League Spartan, sans-serif" font-weight="700" font-size="20" fill="#1E2328">MOVING &amp; HAULING</text>
+        <path d="M330 80 H410 Q430 80 440 100 L470 140 V190 H330Z" fill="#D23C25" stroke="#1E2328" stroke-width="4"/>
+        <path d="M345 92 H402 Q414 92 420 104 L440 134 H345Z" fill="#BFE3EA"/>
+        <g class="mm-w"><circle cx="80" cy="196" r="26" fill="#1E2328"/><circle cx="80" cy="196" r="10" fill="#D9A86B"/><rect x="76" y="172" width="8" height="48" fill="#1E2328" opacity=".5"/></g>
+        <g class="mm-w"><circle cx="400" cy="196" r="26" fill="#1E2328"/><circle cx="400" cy="196" r="10" fill="#D9A86B"/><rect x="396" y="172" width="8" height="48" fill="#1E2328" opacity=".5"/></g>
+        <g class="mm-drop"><rect x="120" y="-6" width="56" height="46" rx="3" fill="#D9A86B" stroke="#B98447" stroke-width="3"/><path d="M120 10 H176" stroke="#B98447" stroke-width="3"/></g>
+        <g class="mm-drop" style="animation-delay:-1s"><rect x="186" y="4" width="46" height="36" rx="3" fill="#D9A86B" stroke="#B98447" stroke-width="3"/><path d="M186 16 H232" stroke="#B98447" stroke-width="3"/></g>
+      </g>
+      <g fill="#1E2328" opacity=".7"><rect x="160" y="170" width="8" height="60"/><path d="M130 170 h70 l-10 -20 h-50z"/></g>
+    </svg>
+  </section>
+
+  <section id="size" style="background: var(--dark); color: #fff">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 100px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 44px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <h2 style="margin: 0; font-size: clamp(44px, 5.4vw, 74px); line-height: .9; font-weight: 900; text-transform: uppercase; letter-spacing: -.03em">How big is your move?</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C9CED4; max-width: 460px">Pick the closest match and see how we'd usually plan it. Call or book online and we'll confirm the details and give you a price.</p>
+        <div role="radiogroup" aria-label="Move size" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px">
+          <sc-for list="{{ sizes }}" as="s" hint-placeholder-count="4"><button type="button" role="radio" class="mm-size" aria-checked="{{ s.sel }}" onClick="{{ s.pick }}" style="{{ s.style }}"><span aria-hidden="true" style="font-size: 26px">{{ s.icon }}</span>{{ s.name }}</button></sc-for>
+        </div>
+      </div>
+      <article style="border-radius: 24px; background: #fff; color: var(--dark); padding: 34px; display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-weight: 800; color: var(--brick); font-size: 20px">{{ cur.name }}</p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px">
+          <div style="border-radius: 16px; background: var(--paper); padding: 16px"><span style="display: block; font-size: 40px; font-weight: 900">{{ cur.crew }}</span><span style="color: #5B636B">movers</span></div>
+          <div style="border-radius: 16px; background: var(--paper); padding: 16px"><span style="display: block; font-size: 40px; font-weight: 900">{{ cur.boxes }}</span><span style="color: #5B636B">boxes, roughly</span></div>
+          <div style="border-radius: 16px; background: var(--paper); padding: 16px"><span style="display: block; font-size: 40px; font-weight: 900">{{ cur.time }}</span><span style="color: #5B636B">hours, often</span></div>
+        </div>
+        <div aria-hidden="true" style="display: flex; flex-wrap: wrap; gap: 6px; min-height: 64px">
+          <sc-for list="{{ cur.stack }}" as="b" hint-placeholder-count="12"><span style="width: 28px; height: 24px; border-radius: 3px; background: #D9A86B; box-shadow: inset 0 -6px 0 #B98447"></span></sc-for>
+        </div>
+        <p style="margin: 0; color: #5B636B; font-size: 15px">A rough guide only. Every move is different, so we confirm everything with you first.</p>
+        <a class="mm-btn" href="#book" style="background: var(--brick); color: #fff">Get my quote</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="reviews" style="max-width: 1280px; margin: 0 auto; padding: 100px 24px">
+    <h2 style="margin: 0 0 36px; font-size: clamp(44px, 5.4vw, 74px); line-height: .9; font-weight: 900; text-transform: uppercase; letter-spacing: -.03em">Lethbridge says</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px">
+      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="3">
+        <figure style="{{ r.style }}"><span aria-hidden="true">★★★★★</span><blockquote style="margin: 0; font-size: 24px; line-height: 1.25; font-weight: 700">"{{ r.q }}"</blockquote><figcaption style="margin-top: auto; opacity: .7">Google review</figcaption></figure>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="book" style="background: var(--brick); color: #fff">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 90px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-size: clamp(44px, 5.4vw, 74px); line-height: .9; font-weight: 900; text-transform: uppercase">Book your move</h2>
+        <p style="margin: 0; font-size: 18px">1009 2 Ave S, Lethbridge, AB · Mon–Fri 8 am – 4:30 pm</p>
+        <p style="margin: 0; font-size: 26px; font-weight: 800"><a href="tel:+14036356069" style="color: #fff">403-635-6069</a></p>
+        <p style="margin: 0">mightymenmovingco@gmail.com</p>
+      </div>
+      <form aria-label="Book a move" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 14px; background: #fff; color: var(--dark); padding: 28px; border-radius: 22px">
+        <label style="display: grid; gap: 8px; font-weight: 700">Moving from<input type="text" style="min-height: 52px; padding: 0 14px; border: 2px solid #EAD9C6; border-radius: 12px; font: 400 16px 'League Spartan', sans-serif"></label>
+        <label style="display: grid; gap: 8px; font-weight: 700">Moving to<input type="text" style="min-height: 52px; padding: 0 14px; border: 2px solid #EAD9C6; border-radius: 12px; font: 400 16px 'League Spartan', sans-serif"></label>
+        <label style="display: grid; gap: 8px; font-weight: 700">Moving date<input type="date" style="min-height: 52px; padding: 0 14px; border: 2px solid #EAD9C6; border-radius: 12px; font: 400 16px 'League Spartan', sans-serif"></label>
+        <label style="display: grid; gap: 8px; font-weight: 700">Phone<input type="tel" style="min-height: 52px; padding: 0 14px; border: 2px solid #EAD9C6; border-radius: 12px; font: 400 16px 'League Spartan', sans-serif"></label>
+        <button type="button" class="mm-btn" style="grid-column: 1 / -1; background: var(--dark); color: #fff">Request my quote</button>
+      </form>
+    </div>
+  </section>
+</div>
+</template>
+<div id="dc-root"></div>
+<div role="note" style="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;max-width:calc(100% - 24px);padding:9px 16px;border-radius:999px;background:rgba(20,20,20,.88);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">Sample design by Hashay Patel for Mighty Men Moving and Hauling. Not the official Mighty Men Moving and Hauling website.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morphdom/2.7.4/morphdom-umd.min.js"></script>
+<script>
+(function(){
+  class DCLogic{constructor(p){this.props=p||{};this.state={}}
+    setState(s){Object.assign(this.state,typeof s==='function'?s(this.state):s);render()}
+    forceUpdate(){render()}}
+  window.DCLogic=DCLogic;
+  var TPL=document.getElementById('dc-tpl').innerHTML, root=document.getElementById('dc-root'), comp, fns=[];
+  function look(p,c){var cur=c;p.split('.').forEach(function(k){cur=(cur!=null&&typeof cur==='object')?cur[k]:undefined});return cur}
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+  function fill(t,c){
+    t=t.replace(/\son(\w+)="\{\{\s*([\w.$]+)\s*\}\}"/g,function(m,ev,p){var f=look(p,c);if(typeof f!=='function')return '';fns.push(f);return ' on'+ev.toLowerCase()+'="__dc('+(fns.length-1)+',event)"'});
+    return t.replace(/\{\{\s*([\w.$]+)\s*\}\}/g,function(m,p){return esc(look(p,c))});
+  }
+  function build(){
+    fns=[];var v=comp.renderVals();
+    var t=TPL.replace(/<sc-for([^>]*)>([\s\S]*?)<\/sc-for>/g,function(m,a,inner){
+      var l=(a.match(/list="\{\{\s*([\w.]+)\s*\}\}"/)||[])[1],as=(a.match(/as="(\w+)"/)||[])[1];
+      var arr=look(l,v)||[];return arr.map(function(it){var c=Object.assign({},v);c[as]=it;return fill(inner,c)}).join('');
+    });
+    return fill(t,v);
+  }
+  window.__dc=function(i,e){if(fns[i])fns[i](e)};
+  function render(){var n=document.createElement('div');n.id='dc-root';n.innerHTML=build();
+    if(window.morphdom){morphdom(root,n)}else{root.innerHTML=n.innerHTML}}
+  window.__dcStart=function(C){comp=new C({});render()};
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { s: 1 }; }
+  renderVals() {
+    var self = this;
+    var sizes = [
+      { icon: "🛏️", name: "Studio or 1-bed", crew: "2", boxes: "15–25", time: "2–4", n: 8 },
+      { icon: "🏠", name: "2–3 bedroom home", crew: "2–3", boxes: "30–50", time: "4–7", n: 16 },
+      { icon: "🏡", name: "Big family home", crew: "3–4", boxes: "60+", time: "7+", n: 24 },
+      { icon: "🏢", name: "Office or junk haul", crew: "2–3", boxes: "Varies", time: "Varies", n: 12 }
+    ];
+    var c = sizes[this.state.s]; var stack = []; for (var i = 0; i < c.n; i++) stack.push({ i: i });
+    return {
+      sizes: sizes.map(function (x, i) { var on = i === self.state.s; return { icon: x.icon, name: x.name, sel: on ? "true" : "false", pick: function () { self.setState({ s: i }); }, style: on ? "background:#F2C14E;color:#1E2328;border:2px solid #F2C14E" : "background:transparent;color:#fff;border:2px solid #4A525A" }; }),
+      cur: { name: c.name, crew: c.crew, boxes: c.boxes, time: c.time, stack: stack },
+      reviews: [
+        { q: "The owner is so personable, kind and efficient and so are his staff.", style: "margin:0;padding:30px;border-radius:20px;background:#D23C25;color:#fff;display:flex;flex-direction:column;gap:14px;min-height:240px" },
+        { q: "Professional quality service and care for your belongings.", style: "margin:0;padding:30px;border-radius:20px;background:#fff;color:#1E2328;display:flex;flex-direction:column;gap:14px;min-height:240px;box-shadow:inset 0 0 0 2px #EAD9C6" },
+        { q: "Thank you to Matt and Mighty man movers for excellent work at a great price.", style: "margin:0;padding:30px;border-radius:20px;background:#F2C14E;color:#1E2328;display:flex;flex-direction:column;gap:14px;min-height:240px" }
+      ]
+    };
+  }
+}
+
+__dcStart(Component);</script>
+</body>
+</html>

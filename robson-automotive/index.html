@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample homepage for Robson Automotive</title>
+<meta name="description" content="A sample homepage design made for Robson Automotive by Hashay Patel. Not the official Robson Automotive website.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Rubik:wght@400..800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F4EEDC}
+*{box-sizing:border-box}
+.ra{--green:#1F4D3A;--deep:#12261D;--cream:#F4EEDC;--gold:#D9A441;--red:#C2412D;--ink:#141A16;font-family:Rubik,system-ui,sans-serif;color:var(--ink);background:var(--cream)}
+.ra-b{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;letter-spacing:.01em}
+@keyframes raNeedle{0%{transform:rotate(-120deg)}35%{transform:rotate(70deg)}45%{transform:rotate(55deg)}60%{transform:rotate(80deg)}100%{transform:rotate(-120deg)}}
+@keyframes raSpin{to{transform:rotate(360deg)}}
+.ra-needle{transform-origin:200px 200px;animation:raNeedle 6s cubic-bezier(.5,0,.3,1) infinite}
+.ra-gear{transform-box:fill-box;transform-origin:center;animation:raSpin 14s linear infinite}
+.ra-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:8px;font:700 16px Rubik,sans-serif;text-decoration:none;border:0;cursor:pointer}
+.ra-btn:focus-visible,.ra-sym:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.ra-sym{display:flex;align-items:center;gap:12px;width:100%;min-height:60px;padding:10px 16px;border-radius:10px;cursor:pointer;font:600 16px Rubik,sans-serif;text-align:left}
+.ra-nav a{color:var(--cream);text-decoration:none;font-weight:500}
+.ra-nav a:hover{color:var(--gold)}
+@media (max-width:820px){.ra-nav{display:none !important}}
+@media (prefers-reduced-motion:reduce){.ra-needle,.ra-gear{animation:none}.ra-needle{transform:rotate(60deg)}}
+</style>
+
+</head>
+<body>
+<template id="dc-tpl">
+
+
+<div class="ra">
+  <div style="background: var(--green); color: var(--cream)">
+    <header style="max-width: 1280px; margin: 0 auto; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px">
+      <a href="#top" style="text-decoration: none; color: var(--cream); line-height: .95"><span class="ra-b" style="font-size: 36px">Robson Automotive</span><span style="display: block; font-size: 13px; color: var(--gold); font-weight: 600">Red Deer, Alberta</span></a>
+      <nav class="ra-nav" aria-label="Main" style="display: flex; gap: 28px"><a href="#noise">What's that noise?</a><a href="#services">Services</a><a href="#book">Book</a></nav>
+      <a class="ra-btn" href="tel:+14033408458" style="min-height: 46px; padding: 0 18px; background: var(--gold); color: var(--deep); white-space: nowrap">403-340-8458</a>
+    </header>
+    <section id="top" style="max-width: 1280px; margin: 0 auto; padding: 30px 24px 100px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr)); gap: 40px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 22px">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px">
+          <span style="padding: 8px 14px; border-radius: 8px; background: var(--deep); font-weight: 600; font-size: 14px"><span style="color: var(--gold)">★ 4.7</span> from 83 Google reviews</span>
+          <span style="padding: 8px 14px; border-radius: 8px; background: var(--red); font-weight: 600; font-size: 14px">Red Seal technician</span>
+        </div>
+        <h1 class="ra-b" style="margin: 0; font-size: clamp(72px, 10vw, 150px); line-height: .86">Fast service. Fair prices. Back on the road.</h1>
+        <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #D5E0D7; max-width: 520px">Brandon Robson is a Red Seal technician with over ten years on the tools. Oil, tires, alignments, brakes, steering, suspension and gas or diesel diagnostics, done right in Red Deer.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a class="ra-btn" href="#book" style="background: var(--gold); color: var(--deep)">Book my vehicle in</a>
+          <a class="ra-btn" href="#noise" style="background: transparent; color: var(--cream); box-shadow: inset 0 0 0 2px rgba(244,238,220,.45)">Describe a problem</a>
+        </div>
+      </div>
+      <div style="position: relative; max-width: 500px; justify-self: center; width: 100%">
+        <svg role="img" aria-label="A tachometer with its needle revving up" viewBox="0 0 400 400" style="display: block; width: 100%; height: auto">
+          <circle cx="200" cy="200" r="150" fill="#F4EEDC"/>
+          <circle cx="200" cy="200" r="138" fill="none" stroke="#1F4D3A" stroke-width="4"/>
+          <path d="M290 280 A128 128 0 0 0 326 200" fill="none" stroke="#C2412D" stroke-width="14"/>
+          <g stroke="#141A16" stroke-width="5" stroke-linecap="round"><path d="M89 264 l12 -7"/><path d="M72 200 h14"/><path d="M89 136 l12 7"/><path d="M136 89 l7 12"/><path d="M200 72 v14"/><path d="M264 89 l-7 12"/><path d="M311 136 l-12 7"/><path d="M328 200 h-14"/></g>
+          <g font-family="Bebas Neue, sans-serif" font-size="26" fill="#141A16" text-anchor="middle"><text x="114" y="262">0</text><text x="104" y="208">1</text><text x="118" y="152">2</text><text x="152" y="118">3</text><text x="200" y="108">4</text><text x="248" y="118">5</text><text x="282" y="152">6</text><text x="296" y="208">7</text></g>
+          <text x="200" y="300" font-family="Rubik, sans-serif" font-size="14" font-weight="700" fill="#1F4D3A" text-anchor="middle">x1000 RPM</text>
+          <g class="ra-needle"><path d="M196 200 L200 82 L204 200Z" fill="#C2412D"/></g>
+          <circle cx="200" cy="200" r="16" fill="#141A16"/><circle cx="200" cy="200" r="6" fill="#D9A441"/>
+        </svg>
+      </div>
+    </section>
+  </div>
+
+  <section id="noise" style="max-width: 1280px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 40px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <h2 class="ra-b" style="margin: 0; font-size: clamp(56px, 7vw, 96px); line-height: .9; color: var(--green)">What's your car doing?</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4C564F; max-width: 460px">Pick the closest match and we'll show you where we'd start looking. Then book it in and we'll find the real cause.</p>
+      <div style="display: grid; gap: 8px; margin-top: 6px">
+        <sc-for list="{{ syms }}" as="s" hint-placeholder-count="6"><button type="button" class="ra-sym" aria-pressed="{{ s.on }}" onClick="{{ s.pick }}" style="{{ s.style }}"><span aria-hidden="true" style="{{ s.dot }}"></span>{{ s.name }}</button></sc-for>
+      </div>
+    </div>
+    <div style="border-radius: 18px; background: var(--deep); color: var(--cream); padding: 34px; display: flex; flex-direction: column; gap: 16px; position: sticky; top: 20px">
+      <span style="font-size: 14px; font-weight: 600; color: var(--gold)">Where we'd start</span>
+      <h3 class="ra-b" style="margin: 0; font-size: 60px; line-height: .9">{{ area }}</h3>
+      <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #C9D3CC">{{ desc }}</p>
+      <ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 8px">
+        <sc-for list="{{ checks }}" as="c" hint-placeholder-count="3"><li style="display: flex; gap: 10px; align-items: center"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 2px; background: var(--gold); flex: none"></span>{{ c.t }}</li></sc-for>
+      </ul>
+      <a class="ra-btn" href="#book" style="margin-top: 8px; background: var(--gold); color: var(--deep)">Book an inspection</a>
+      <p style="margin: 0; font-size: 13px; color: #8FA197">A starting point only. We'll confirm the cause before any work is done.</p>
+    </div>
+  </section>
+
+  <section id="services" style="background: var(--deep); color: var(--cream)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 96px 24px">
+      <h2 class="ra-b" style="margin: 0 0 34px; font-size: clamp(56px, 7vw, 96px); line-height: .9">Red Deer drivers say</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px">
+        <figure style="margin: 0; padding: 30px; border-radius: 14px; background: var(--green); display: flex; flex-direction: column; gap: 14px"><span aria-hidden="true" style="color: var(--gold)">★★★★★</span><blockquote style="margin: 0; font-size: 21px; line-height: 1.4; font-weight: 600">"Received fast service and the price was very reasonable for the work done."</blockquote><figcaption style="margin-top: auto; font-size: 14px; color: #B9C9BE">Google review</figcaption></figure>
+        <figure style="margin: 0; padding: 30px; border-radius: 14px; background: var(--cream); color: var(--ink); display: flex; flex-direction: column; gap: 14px"><span aria-hidden="true" style="color: var(--red)">★★★★★</span><blockquote style="margin: 0; font-size: 21px; line-height: 1.4; font-weight: 600">"Very quick service, good prices, overall very enjoyable experience."</blockquote><figcaption style="margin-top: auto; font-size: 14px; color: #5B655E">Google review</figcaption></figure>
+        <figure style="margin: 0; padding: 30px; border-radius: 14px; background: var(--gold); color: var(--deep); display: flex; flex-direction: column; gap: 14px"><span aria-hidden="true">★★★★★</span><blockquote style="margin: 0; font-size: 21px; line-height: 1.4; font-weight: 600">"Reasonable pricing and always great service!"</blockquote><figcaption style="margin-top: auto; font-size: 14px; color: #5A4416">Google review</figcaption></figure>
+      </div>
+      <ul style="margin: 50px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 10px">
+        <li class="ra-b" style="padding: 10px 18px; border-radius: 8px; border: 2px solid #2E5E49; font-size: 24px">Oil changes</li><li class="ra-b" style="padding: 10px 18px; border-radius: 8px; border: 2px solid #2E5E49; font-size: 24px">Tires</li><li class="ra-b" style="padding: 10px 18px; border-radius: 8px; border: 2px solid #2E5E49; font-size: 24px">Alignments</li><li class="ra-b" style="padding: 10px 18px; border-radius: 8px; border: 2px solid #2E5E49; font-size: 24px">Brakes</li><li class="ra-b" style="padding: 10px 18px; border-radius: 8px; border: 2px solid #2E5E49; font-size: 24px">Steering</li><li class="ra-b" style="padding: 10px 18px; border-radius: 8px; border: 2px solid #2E5E49; font-size: 24px">Suspension</li><li class="ra-b" style="padding: 10px 18px; border-radius: 8px; border: 2px solid #2E5E49; font-size: 24px">Gas and diesel diagnostics</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="book" style="max-width: 1280px; margin: 0 auto; padding: 90px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 40px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <h2 class="ra-b" style="margin: 0; font-size: clamp(56px, 7vw, 96px); line-height: .9; color: var(--green)">Book your vehicle in</h2>
+      <p style="margin: 0; font-size: 18px">7611 49 Ave, Unit 4, Red Deer, AB</p>
+      <p style="margin: 0; font-size: 18px">Monday to Friday, 8 am – 5 pm</p>
+      <p style="margin: 0; font-size: 26px; font-weight: 800"><a href="tel:+14033408458" style="color: var(--green)">403-340-8458</a></p>
+      <p style="margin: 0; color: #4C564F">Robsonauto32@gmail.com</p>
+    </div>
+    <form aria-label="Book your vehicle" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 14px; background: #fff; padding: 26px; border-radius: 16px; border: 2px solid #E2DAC3">
+      <label style="display: grid; gap: 8px; font-weight: 700">Name<input type="text" style="min-height: 52px; padding: 0 14px; border: 2px solid #E2DAC3; border-radius: 8px; font: 400 16px Rubik, sans-serif"></label>
+      <label style="display: grid; gap: 8px; font-weight: 700">Vehicle<input type="text" style="min-height: 52px; padding: 0 14px; border: 2px solid #E2DAC3; border-radius: 8px; font: 400 16px Rubik, sans-serif"></label>
+      <label style="grid-column: 1 / -1; display: grid; gap: 8px; font-weight: 700">What's it doing?<textarea rows="3" style="padding: 12px 14px; border: 2px solid #E2DAC3; border-radius: 8px; font: 400 16px Rubik, sans-serif"></textarea></label>
+      <button type="button" class="ra-btn" style="grid-column: 1 / -1; background: var(--green); color: var(--cream)">Request my booking</button>
+    </form>
+  </section>
+</div>
+</template>
+<div id="dc-root"></div>
+<div role="note" style="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;max-width:calc(100% - 24px);padding:9px 16px;border-radius:999px;background:rgba(20,20,20,.88);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">Sample design by Hashay Patel for Robson Automotive. Not the official Robson Automotive website.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morphdom/2.7.4/morphdom-umd.min.js"></script>
+<script>
+(function(){
+  class DCLogic{constructor(p){this.props=p||{};this.state={}}
+    setState(s){Object.assign(this.state,typeof s==='function'?s(this.state):s);render()}
+    forceUpdate(){render()}}
+  window.DCLogic=DCLogic;
+  var TPL=document.getElementById('dc-tpl').innerHTML, root=document.getElementById('dc-root'), comp, fns=[];
+  function look(p,c){var cur=c;p.split('.').forEach(function(k){cur=(cur!=null&&typeof cur==='object')?cur[k]:undefined});return cur}
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+  function fill(t,c){
+    t=t.replace(/\son(\w+)="\{\{\s*([\w.$]+)\s*\}\}"/g,function(m,ev,p){var f=look(p,c);if(typeof f!=='function')return '';fns.push(f);return ' on'+ev.toLowerCase()+'="__dc('+(fns.length-1)+',event)"'});
+    return t.replace(/\{\{\s*([\w.$]+)\s*\}\}/g,function(m,p){return esc(look(p,c))});
+  }
+  function build(){
+    fns=[];var v=comp.renderVals();
+    var t=TPL.replace(/<sc-for([^>]*)>([\s\S]*?)<\/sc-for>/g,function(m,a,inner){
+      var l=(a.match(/list="\{\{\s*([\w.]+)\s*\}\}"/)||[])[1],as=(a.match(/as="(\w+)"/)||[])[1];
+      var arr=look(l,v)||[];return arr.map(function(it){var c=Object.assign({},v);c[as]=it;return fill(inner,c)}).join('');
+    });
+    return fill(t,v);
+  }
+  window.__dc=function(i,e){if(fns[i])fns[i](e)};
+  function render(){var n=document.createElement('div');n.id='dc-root';n.innerHTML=build();
+    if(window.morphdom){morphdom(root,n)}else{root.innerHTML=n.innerHTML}}
+  window.__dcStart=function(C){comp=new C({});render()};
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { i: 0 }; }
+  renderVals() {
+    var self = this, cur = this.state.i;
+    var s = [
+      { name: "Squealing or grinding when I brake", area: "Brakes", desc: "Squeals and grinding usually mean worn pads or rotors. Best looked at soon, before it costs more.", checks: ["Pads and rotors", "Calipers and hardware", "Brake fluid"] },
+      { name: "Clunking over bumps", area: "Suspension", desc: "A clunk over bumps often points to worn suspension or steering parts.", checks: ["Ball joints and tie rods", "Shocks and struts", "Sway bar links"] },
+      { name: "Pulling to one side", area: "Alignment", desc: "Pulling can come from alignment, tire wear or pressure, or a sticking brake.", checks: ["Wheel alignment", "Tire wear and pressure", "Brake drag"] },
+      { name: "Check engine light is on", area: "Diagnostics", desc: "We read the codes on gas and diesel engines and trace the fault, rather than guessing.", checks: ["Code scan", "Sensor and wiring checks", "Clear explanation of the fix"] },
+      { name: "Due for an oil change", area: "Oil service", desc: "Fresh oil and filter, with a look over the rest of the vehicle while it's in.", checks: ["Oil and filter", "Fluid top-ups", "Quick safety look-over"] },
+      { name: "Tires worn or need swapping", area: "Tires", desc: "Seasonal swaps, new tires and balancing to keep you safe on Alberta roads.", checks: ["Tread and age check", "Mount and balance", "Seasonal changeover"] }
+    ];
+    return {
+      syms: s.map(function (x, i) { var on = i === cur; return { name: x.name, on: on ? "true" : "false", pick: function () { self.setState({ i: i }); }, style: on ? "background:#1F4D3A;color:#F4EEDC;border:2px solid #1F4D3A" : "background:#fff;color:#141A16;border:2px solid #E2DAC3", dot: "flex:none;width:14px;height:14px;border-radius:50%;" + (on ? "background:#D9A441" : "border:2px solid #B8AE93") }; }),
+      area: s[cur].area, desc: s[cur].desc,
+      checks: s[cur].checks.map(function (t) { return { t: t }; })
+    };
+  }
+}
+
+__dcStart(Component);</script>
+</body>
+</html>

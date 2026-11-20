@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample homepage for ShadeX Window Tint</title>
+<meta name="description" content="A sample homepage design made for ShadeX Window Tint by Hashay Patel. Not the official ShadeX Window Tint website.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&amp;family=Inter+Tight:wght@400..800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#14161B}
+*{box-sizing:border-box}
+.sx{--ink:#14161B;--steel:#23262E;--sun:#FF7A1A;--sun2:#FFB347;--sand:#F3EDE4;--glass:#8EC9E8;font-family:'Inter Tight',system-ui,sans-serif;color:var(--sand);background:var(--ink)}
+.sx-d{font-family:Righteous,sans-serif;font-weight:400;letter-spacing:-.01em}
+@keyframes sxRays{to{transform:rotate(360deg)}}
+@keyframes sxSweep{0%,20%{transform:translateX(-120%)}60%,100%{transform:translateX(120%)}}
+@keyframes sxHeat{0%,100%{opacity:.15}50%{opacity:.45}}
+.sx-rays{transform-origin:110px 110px;animation:sxRays 30s linear infinite}
+.sx-sweep{animation:sxSweep 4.5s ease-in-out infinite}
+.sx-heat{animation:sxHeat 3s ease-in-out infinite}
+.sx-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:12px;font:700 16px 'Inter Tight',sans-serif;text-decoration:none;border:0;cursor:pointer}
+.sx-btn:focus-visible,.sx-shade:focus-visible{outline:3px solid var(--sun2);outline-offset:3px}
+.sx-shade{flex:1 1 90px;min-height:76px;border-radius:14px;cursor:pointer;font:700 15px 'Inter Tight',sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.sx-nav a{color:var(--sand);text-decoration:none;font-weight:600;opacity:.85}
+.sx-nav a:hover{opacity:1;color:var(--sun2)}
+@media (max-width:820px){.sx-nav{display:none !important}}
+@media (max-width:600px){.sx-sub{display:none}.sx-sun{opacity:.25 !important;top:-300px !important}}
+@media (prefers-reduced-motion:reduce){.sx-rays,.sx-sweep,.sx-heat{animation:none}}
+</style>
+
+</head>
+<body>
+<template id="dc-tpl">
+
+
+<div class="sx">
+  <header style="max-width: 1300px; margin: 0 auto; padding: 22px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px">
+    <a href="#top" class="sx-d" style="font-size: 30px; color: var(--sand); text-decoration: none; white-space: nowrap">Shade<span style="color: var(--sun)">X</span><span class="sx-sub" style="font-family: 'Inter Tight', sans-serif; font-size: 13px; font-weight: 600; margin-left: 10px; opacity: .7">Window Tint · Kamloops</span></a>
+    <nav class="sx-nav" aria-label="Main" style="display: flex; gap: 30px"><a href="#shade">Pick a shade</a><a href="#why">Why tint</a><a href="#book">Book</a></nav>
+    <a class="sx-btn" href="tel:+17783206702" style="min-height: 46px; padding: 0 18px; background: var(--sun); color: var(--ink); white-space: nowrap">778-320-6702</a>
+  </header>
+
+  <section id="top" style="position: relative; overflow: hidden">
+    <svg class="sx-sun" aria-hidden="true" viewBox="0 0 220 220" style="position: absolute; right: -120px; top: -140px; width: 620px; height: 620px; opacity: .9"><g class="sx-rays" fill="#FF7A1A" opacity=".18"><path d="M110 0 L118 80 L102 80Z"/><path d="M110 220 L118 140 L102 140Z"/><path d="M0 110 L80 102 L80 118Z"/><path d="M220 110 L140 102 L140 118Z"/><path d="M32 32 L90 88 L84 94Z"/><path d="M188 188 L130 132 L136 126Z"/><path d="M188 32 L132 90 L126 84Z"/><path d="M32 188 L88 130 L94 136Z"/></g><circle cx="110" cy="110" r="34" fill="#FFB347"/></svg>
+    <div style="position: relative; max-width: 1300px; margin: 0 auto; padding: 40px 24px 90px; display: flex; flex-direction: column; gap: 26px">
+      <p style="margin: 0; align-self: flex-start; padding: 8px 14px; border-radius: 10px; background: var(--steel); font-weight: 600; font-size: 14px"><span style="color: var(--sun2)">★ 5.0</span> from 35 Google reviews</p>
+      <h1 class="sx-d" style="margin: 0; font-size: clamp(56px, 9vw, 140px); line-height: .9; max-width: 1000px">Keep the Kamloops sun outside.</h1>
+      <p style="margin: 0; font-size: 19px; line-height: 1.6; max-width: 560px; color: #C7C2BA">Automotive window tint that cuts heat, glare and UV, installed right here in Kamloops. Open every day, 9 to 5.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a class="sx-btn" href="#shade" style="background: var(--sun); color: var(--ink)">Pick my shade</a>
+        <a class="sx-btn" href="#book" style="background: transparent; color: var(--sand); box-shadow: inset 0 0 0 2px #4A4E58">Book an install</a>
+      </div>
+      <svg role="img" aria-label="Side view of a car with tint film sweeping across the windows" viewBox="0 0 1000 300" style="display: block; width: 100%; height: auto; margin-top: 10px">
+        <defs><clipPath id="sxWin"><path d="M330 70 L470 40 H610 L700 112 H330Z"/></clipPath><linearGradient id="sxBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A3F4B"/><stop offset="1" stop-color="#1D2027"/></linearGradient></defs>
+        <rect x="0" y="262" width="1000" height="6" rx="3" fill="#2C2F37"/>
+        <path d="M150 230 Q150 150 240 130 L330 70 L470 36 H620 L720 112 Q840 120 870 160 Q890 190 880 230Z" fill="url(#sxBody)"/>
+        <path d="M150 196 H880" stroke="#FF7A1A" stroke-width="4"/>
+        <path d="M330 70 L470 40 H610 L700 112 H330Z" fill="#8EC9E8"/>
+        <g clip-path="url(#sxWin)"><rect x="320" y="30" width="400" height="90" fill="#14161B" opacity=".72"/><rect class="sx-sweep" x="320" y="30" width="120" height="90" fill="#fff" opacity=".18" transform="skewX(-20)"/></g>
+        <line x1="505" y1="40" x2="505" y2="112" stroke="#14161B" stroke-width="10"/>
+        <circle cx="290" cy="232" r="46" fill="#0E0F13"/><circle cx="290" cy="232" r="22" fill="#5A5F6B"/>
+        <circle cx="760" cy="232" r="46" fill="#0E0F13"/><circle cx="760" cy="232" r="22" fill="#5A5F6B"/>
+        <g class="sx-heat" stroke="#FF7A1A" stroke-width="4" fill="none" stroke-linecap="round"><path d="M560 10 q10 -10 0 -20"/><path d="M590 14 q10 -10 0 -20"/><path d="M620 10 q10 -10 0 -20"/></g>
+      </svg>
+    </div>
+  </section>
+
+  <section id="shade" style="background: var(--sand); color: var(--ink)">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 44px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <h2 class="sx-d" style="margin: 0; font-size: clamp(44px, 5.6vw, 76px); line-height: .95">Pick your shade</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4D4A45; max-width: 480px">Tint is measured by how much light it lets through. Tap a percentage to see how dark it looks from outside, then bring the number to your install.</p>
+        <div role="group" aria-label="Tint percentage" style="display: flex; flex-wrap: wrap; gap: 8px">
+          <sc-for list="{{ shades }}" as="s" hint-placeholder-count="5"><button type="button" class="sx-shade" aria-pressed="{{ s.on }}" onClick="{{ s.pick }}" style="{{ s.style }}"><span class="sx-d" style="font-size: 24px">{{ s.v }}%</span><span style="font-size: 12px; font-weight: 600; opacity: .8">{{ s.tag }}</span></button></sc-for>
+        </div>
+        <p style="margin: 0; font-size: 14px; color: #6E6A63">Rules differ for front side windows and windshields in BC. Ask us what's allowed on your vehicle.</p>
+      </div>
+      <div style="border-radius: 26px; background: var(--ink); padding: 28px; color: var(--sand)">
+        <svg role="img" aria-label="{{ alt }}" viewBox="0 0 520 300" style="display: block; width: 100%; height: auto">
+          <defs><clipPath id="sxW2"><path d="M70 230 L150 70 Q160 50 190 50 H400 Q440 50 460 90 L480 230Z"/></clipPath><linearGradient id="sxOut" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD089"/><stop offset="1" stop-color="#8EC9E8"/></linearGradient></defs>
+          <path d="M40 260 L130 50 Q145 20 190 20 H410 Q460 20 490 80 L510 260Z" fill="#2E323B"/>
+          <g clip-path="url(#sxW2)">
+            <rect width="520" height="300" fill="url(#sxOut)"/>
+            <circle cx="180" cy="140" r="34" fill="#3A3F4B"/><path d="M130 230 Q140 180 180 176 Q220 180 230 230Z" fill="#3A3F4B"/>
+            <rect x="300" y="110" width="120" height="16" rx="8" fill="#3A3F4B"/>
+            <rect width="520" height="300" fill="#0B0C10" style="opacity: {{ dark }}; transition: opacity .35s ease"/>
+            <path d="M120 60 L200 60 L110 240 L60 240Z" fill="#fff" opacity=".12"/>
+          </g>
+        </svg>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr)); gap: 12px; margin-top: 20px">
+          <div style="padding: 16px; border-radius: 14px; background: var(--steel)"><span class="sx-d" style="font-size: 34px; color: var(--sun2)">{{ cur }}%</span><span style="display: block; font-size: 13px; opacity: .75">of light gets through</span></div>
+          <div style="padding: 16px; border-radius: 14px; background: var(--steel)"><span style="display: block; font-weight: 700; font-size: 17px">{{ look }}</span><span style="display: block; font-size: 13px; opacity: .75; margin-top: 4px">{{ note }}</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" style="max-width: 1300px; margin: 0 auto; padding: 96px 24px">
+    <h2 class="sx-d" style="margin: 0 0 36px; font-size: clamp(44px, 5.6vw, 76px); line-height: .95">What tint does for you</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px">
+      <article style="padding: 28px; border-radius: 22px; background: var(--steel); display: flex; flex-direction: column; gap: 12px"><svg aria-hidden="true" width="44" height="44" viewBox="0 0 44 44"><circle cx="22" cy="22" r="10" fill="#FF7A1A"/><g stroke="#FF7A1A" stroke-width="3" stroke-linecap="round"><path d="M22 2v6M22 36v6M2 22h6M36 22h6M8 8l4 4M32 32l4 4M36 8l-4 4M8 36l4-4"/></g></svg><h3 style="margin: 0; font-size: 22px">Less heat</h3><p style="margin: 0; line-height: 1.6; color: #C7C2BA">A cooler cabin on summer days, and the AC doesn't have to fight as hard.</p></article>
+      <article style="padding: 28px; border-radius: 22px; background: var(--steel); display: flex; flex-direction: column; gap: 12px"><svg aria-hidden="true" width="44" height="44" viewBox="0 0 44 44"><path d="M4 22 Q22 4 40 22 Q22 40 4 22Z" fill="none" stroke="#FFB347" stroke-width="3"/><circle cx="22" cy="22" r="6" fill="#FFB347"/></svg><h3 style="margin: 0; font-size: 22px">Less glare</h3><p style="margin: 0; line-height: 1.6; color: #C7C2BA">Easier on the eyes driving into low sun on the highway.</p></article>
+      <article style="padding: 28px; border-radius: 22px; background: var(--steel); display: flex; flex-direction: column; gap: 12px"><svg aria-hidden="true" width="44" height="44" viewBox="0 0 44 44"><path d="M22 4 L38 10 V22 Q38 34 22 40 Q6 34 6 22 V10Z" fill="none" stroke="#8EC9E8" stroke-width="3"/><path d="M15 22 l5 5 9 -10" fill="none" stroke="#8EC9E8" stroke-width="3"/></svg><h3 style="margin: 0; font-size: 22px">UV protection</h3><p style="margin: 0; line-height: 1.6; color: #C7C2BA">Helps protect your skin and stops the interior fading.</p></article>
+      <article style="padding: 28px; border-radius: 22px; background: var(--sun); color: var(--ink); display: flex; flex-direction: column; gap: 12px"><span class="sx-d" style="font-size: 54px; line-height: 1">5.0</span><h3 style="margin: 0; font-size: 22px">35 Google reviews</h3><p style="margin: 0; line-height: 1.6">A perfect average from local drivers.</p></article>
+    </div>
+  </section>
+
+  <section id="book" style="background: var(--steel)">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 90px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 40px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h2 class="sx-d" style="margin: 0; font-size: clamp(44px, 5.6vw, 76px); line-height: .95">Book your install</h2>
+        <p style="margin: 0; font-size: 18px; color: #C7C2BA">Kamloops, BC · open daily 9 am – 5 pm</p>
+        <p style="margin: 0; font-size: 26px; font-weight: 800"><a href="tel:+17783206702" style="color: var(--sun2)">778-320-6702</a></p>
+        <p style="margin: 0; color: #C7C2BA">Shadexwindowtint@gmail.com</p>
+      </div>
+      <form aria-label="Book an install" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 14px; padding: 26px; border-radius: 22px; background: var(--ink)">
+        <label style="display: grid; gap: 8px; font-weight: 700">Name<input type="text" style="min-height: 52px; padding: 0 14px; border: 2px solid #33363F; border-radius: 10px; background: var(--steel); color: var(--sand); font: 400 16px 'Inter Tight', sans-serif"></label>
+        <label style="display: grid; gap: 8px; font-weight: 700">Vehicle<input type="text" style="min-height: 52px; padding: 0 14px; border: 2px solid #33363F; border-radius: 10px; background: var(--steel); color: var(--sand); font: 400 16px 'Inter Tight', sans-serif"></label>
+        <label style="grid-column: 1 / -1; display: grid; gap: 8px; font-weight: 700">Shade you like<select style="min-height: 52px; padding: 0 14px; border: 2px solid #33363F; border-radius: 10px; background: var(--steel); color: var(--sand); font: 400 16px 'Inter Tight', sans-serif"><option>Not sure yet</option><option>70%</option><option>50%</option><option>35%</option><option>20%</option><option>5%</option></select></label>
+        <button type="button" class="sx-btn" style="grid-column: 1 / -1; background: var(--sun); color: var(--ink)">Request my booking</button>
+      </form>
+    </div>
+  </section>
+</div>
+</template>
+<div id="dc-root"></div>
+<div role="note" style="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;max-width:calc(100% - 24px);padding:9px 16px;border-radius:999px;background:rgba(20,20,20,.88);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">Sample design by Hashay Patel for ShadeX Window Tint. Not the official ShadeX Window Tint website.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morphdom/2.7.4/morphdom-umd.min.js"></script>
+<script>
+(function(){
+  class DCLogic{constructor(p){this.props=p||{};this.state={}}
+    setState(s){Object.assign(this.state,typeof s==='function'?s(this.state):s);render()}
+    forceUpdate(){render()}}
+  window.DCLogic=DCLogic;
+  var TPL=document.getElementById('dc-tpl').innerHTML, root=document.getElementById('dc-root'), comp, fns=[];
+  function look(p,c){var cur=c;p.split('.').forEach(function(k){cur=(cur!=null&&typeof cur==='object')?cur[k]:undefined});return cur}
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+  function fill(t,c){
+    t=t.replace(/\son(\w+)="\{\{\s*([\w.$]+)\s*\}\}"/g,function(m,ev,p){var f=look(p,c);if(typeof f!=='function')return '';fns.push(f);return ' on'+ev.toLowerCase()+'="__dc('+(fns.length-1)+',event)"'});
+    return t.replace(/\{\{\s*([\w.$]+)\s*\}\}/g,function(m,p){return esc(look(p,c))});
+  }
+  function build(){
+    fns=[];var v=comp.renderVals();
+    var t=TPL.replace(/<sc-for([^>]*)>([\s\S]*?)<\/sc-for>/g,function(m,a,inner){
+      var l=(a.match(/list="\{\{\s*([\w.]+)\s*\}\}"/)||[])[1],as=(a.match(/as="(\w+)"/)||[])[1];
+      var arr=look(l,v)||[];return arr.map(function(it){var c=Object.assign({},v);c[as]=it;return fill(inner,c)}).join('');
+    });
+    return fill(t,v);
+  }
+  window.__dc=function(i,e){if(fns[i])fns[i](e)};
+  function render(){var n=document.createElement('div');n.id='dc-root';n.innerHTML=build();
+    if(window.morphdom){morphdom(root,n)}else{root.innerHTML=n.innerHTML}}
+  window.__dcStart=function(C){comp=new C({});render()};
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { i: 2 }; }
+  renderVals() {
+    var self = this;
+    var s = [
+      { v: 70, tag: "Barely there", look: "Almost clear", note: "Cuts UV without changing the look", dark: 0.18 },
+      { v: 50, tag: "Light", look: "Lightly shaded", note: "Softer glare, easy night driving", dark: 0.35 },
+      { v: 35, tag: "Popular", look: "Classic tint", note: "Noticeably darker, still easy to see out", dark: 0.52 },
+      { v: 20, tag: "Dark", look: "Dark and private", note: "Hard to see in during the day", dark: 0.7 },
+      { v: 5, tag: "Limo", look: "Limo dark", note: "Maximum privacy for rear windows", dark: 0.9 }
+    ];
+    var c = s[this.state.i];
+    return {
+      shades: s.map(function (x, i) { var on = i === self.state.i; return { v: x.v, tag: x.tag, on: on ? "true" : "false", pick: function () { self.setState({ i: i }); }, style: on ? "background:#14161B;color:#F3EDE4;border:2px solid #14161B" : "background:#fff;color:#14161B;border:2px solid #DCD3C6" }; }),
+      cur: c.v, look: c.look, note: c.note, dark: c.dark,
+      alt: "Car window preview at " + c.v + " percent tint"
+    };
+  }
+}
+
+__dcStart(Component);</script>
+</body>
+</html>

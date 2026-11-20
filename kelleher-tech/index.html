@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample homepage for Kelleher Tech</title>
+<meta name="description" content="A sample homepage design made for Kelleher Tech by Hashay Patel. Not the official Kelleher Tech website.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#100D1E}
+*{box-sizing:border-box}
+.kt{--void:#100D1E;--panel:#1B1730;--edge:#2E2850;--cyan:#33E3F5;--flare:#FF6B3D;--mist:#C9C4E6;--white:#F5F3FF;font-family:'Chakra Petch',system-ui,sans-serif;color:var(--white);background:var(--void)}
+@keyframes ktEq{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}
+@keyframes ktScan{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+@keyframes ktGlow{0%,100%{opacity:.5}50%{opacity:1}}
+.kt-eq{transform-origin:bottom;transform-box:fill-box;animation:ktEq .9s ease-in-out infinite}
+.kt-scan{animation:ktScan 3.5s linear infinite}
+.kt-glow{animation:ktGlow 2.2s ease-in-out infinite}
+.kt-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;font:700 16px 'Chakra Petch',sans-serif;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px)}
+.kt-btn:focus-visible,.kt-tab:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.kt-tab{display:flex;align-items:center;gap:12px;width:100%;min-height:58px;padding:0 18px;cursor:pointer;font:600 16px 'Chakra Petch',sans-serif;text-align:left}
+.kt-nav a{color:var(--mist);text-decoration:none;font-weight:500}
+.kt-nav a:hover{color:var(--cyan)}
+@media (max-width:820px){.kt-nav{display:none !important}}
+@media (prefers-reduced-motion:reduce){.kt-eq,.kt-scan,.kt-glow{animation:none}}
+</style>
+
+</head>
+<body>
+<template id="dc-tpl">
+
+
+<div class="kt">
+  <section id="top" style="position: relative; overflow: hidden; background: radial-gradient(60% 70% at 75% 30%, rgba(51,227,245,.16), transparent 70%), radial-gradient(50% 60% at 10% 90%, rgba(255,107,61,.14), transparent 70%), var(--void)">
+    <svg aria-hidden="true" viewBox="0 0 1440 900" preserveAspectRatio="none" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: .25"><g stroke="#2E2850" stroke-width="1"><path d="M0 150 H1440 M0 300 H1440 M0 450 H1440 M0 600 H1440 M0 750 H1440 M240 0 V900 M480 0 V900 M720 0 V900 M960 0 V900 M1200 0 V900"/></g></svg>
+    <header style="position: relative; z-index: 2; max-width: 1300px; margin: 0 auto; padding: 22px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px">
+      <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--white)">
+        <svg aria-hidden="true" width="46" height="46" viewBox="0 0 46 46"><rect x="1" y="1" width="44" height="44" fill="none" stroke="#33E3F5" stroke-width="2"/><g fill="#33E3F5"><rect x="9" y="22" width="5" height="14"/><rect x="17" y="12" width="5" height="24"/><rect x="25" y="17" width="5" height="19"/></g><rect x="33" y="8" width="5" height="28" fill="#FF6B3D"/></svg>
+        <span style="display: flex; flex-direction: column; line-height: 1.1"><span style="font-size: 22px; font-weight: 700">Kelleher Tech</span><span style="font-size: 13px; color: var(--mist)">&amp; Autosound · Brandon, MB</span></span>
+      </a>
+      <nav class="kt-nav" aria-label="Main" style="display: flex; gap: 30px"><a href="#upgrades">Upgrades</a><a href="#repairs">Electronics repair</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav>
+      <a class="kt-btn" href="tel:+12047179600" style="min-height: 46px; background: var(--cyan); color: var(--void)">204-717-9600</a>
+    </header>
+
+    <div style="position: relative; z-index: 2; max-width: 1300px; margin: 0 auto; padding: 36px 24px 100px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 44px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 24px">
+        <p style="margin: 0; display: inline-flex; align-self: flex-start; gap: 10px; align-items: center; padding: 8px 14px; border: 1px solid var(--edge); background: rgba(27,23,48,.7); color: var(--mist); font-size: 14px"><span aria-hidden="true" class="kt-glow" style="width: 8px; height: 8px; background: var(--cyan)"></span>4.8 ★ · 47 Google reviews</p>
+        <h1 style="margin: 0; font-size: clamp(50px, 6.6vw, 96px); line-height: .95; font-weight: 700; letter-spacing: -.02em">Make your ride sound, start and glow better.</h1>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: var(--mist); max-width: 540px">Car audio and video, remote starters, alarms, lighting and GPS tracking, installed clean. Plus repairs and micro-soldering for the electronics nobody else will touch.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a class="kt-btn" href="#upgrades" style="background: var(--cyan); color: var(--void)">Pick an upgrade</a>
+          <a class="kt-btn" href="#repairs" style="background: var(--panel); color: var(--white); box-shadow: inset 0 0 0 1px var(--edge)">Fix my electronics</a>
+        </div>
+      </div>
+
+      <figure style="margin: 0; position: relative">
+        <svg role="img" aria-label="A glowing car head unit showing a remote start install with a live equalizer" viewBox="0 0 600 440" style="display: block; width: 100%; height: auto; filter: drop-shadow(0 40px 60px rgba(0,0,0,.6))">
+          <defs>
+            <linearGradient id="ktBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A2546"/><stop offset="1" stop-color="#141126"/></linearGradient>
+            <linearGradient id="ktScreen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B2230"/><stop offset="1" stop-color="#130F2A"/></linearGradient>
+            <clipPath id="ktClip"><rect x="110" y="70" width="380" height="230" rx="10"/></clipPath>
+          </defs>
+          <rect x="30" y="30" width="540" height="380" rx="34" fill="url(#ktBody)" stroke="#3B3463" stroke-width="2"/>
+          <rect x="110" y="70" width="380" height="230" rx="10" fill="url(#ktScreen)" stroke="#33E3F5" stroke-opacity=".5"/>
+          <g clip-path="url(#ktClip)">
+            <rect class="kt-scan" x="110" y="70" width="190" height="230" fill="url(#ktScreen)" opacity="0"/>
+            <text x="134" y="110" font-family="Chakra Petch, sans-serif" font-size="15" fill="#C9C4E6">Now installing</text>
+            <text x="134" y="146" font-family="Chakra Petch, sans-serif" font-weight="700" font-size="30" fill="#F5F3FF">Remote starter</text>
+            <rect x="134" y="164" width="230" height="8" rx="4" fill="#2E2850"/><rect x="134" y="164" width="172" height="8" rx="4" fill="#33E3F5"/>
+            <text x="372" y="172" font-family="Chakra Petch, sans-serif" font-size="14" fill="#33E3F5">75%</text>
+            <g fill="#33E3F5">
+              <rect class="kt-eq" x="134" y="200" width="16" height="80" rx="3"/>
+              <rect class="kt-eq" x="158" y="200" width="16" height="80" rx="3" style="animation-delay:-.2s"/>
+              <rect class="kt-eq" x="182" y="200" width="16" height="80" rx="3" style="animation-delay:-.5s"/>
+              <rect class="kt-eq" x="206" y="200" width="16" height="80" rx="3" style="animation-delay:-.1s"/>
+              <rect class="kt-eq" x="230" y="200" width="16" height="80" rx="3" style="animation-delay:-.7s"/>
+              <rect class="kt-eq" x="254" y="200" width="16" height="80" rx="3" style="animation-delay:-.35s"/>
+              <rect class="kt-eq" x="278" y="200" width="16" height="80" rx="3" style="animation-delay:-.6s"/>
+              <rect class="kt-eq" x="302" y="200" width="16" height="80" rx="3" style="animation-delay:-.15s"/>
+            </g>
+            <g fill="#FF6B3D"><rect class="kt-eq" x="326" y="200" width="16" height="80" rx="3" style="animation-delay:-.45s"/><rect class="kt-eq" x="350" y="200" width="16" height="80" rx="3" style="animation-delay:-.25s"/></g>
+            <g font-family="Chakra Petch, sans-serif" font-size="13" fill="#C9C4E6"><text x="400" y="214">BT</text><text x="400" y="240">GPS</text><text x="400" y="266">CAM</text></g>
+            <g fill="#33E3F5"><circle cx="454" cy="210" r="5"/><circle cx="454" cy="236" r="5"/></g><circle cx="454" cy="262" r="5" fill="#FF6B3D"/>
+          </g>
+          <circle cx="70" cy="185" r="26" fill="#141126" stroke="#3B3463" stroke-width="3"/><path d="M70 165 V180" stroke="#33E3F5" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="530" cy="185" r="26" fill="#141126" stroke="#3B3463" stroke-width="3"/><path d="M546 175 L534 185" stroke="#FF6B3D" stroke-width="3" stroke-linecap="round"/>
+          <g fill="#2E2850"><rect x="110" y="330" width="80" height="44" rx="8"/><rect x="205" y="330" width="80" height="44" rx="8"/><rect x="300" y="330" width="80" height="44" rx="8"/><rect x="395" y="330" width="95" height="44" rx="8"/></g>
+          <g font-family="Chakra Petch, sans-serif" font-size="14" font-weight="600" fill="#C9C4E6" text-anchor="middle"><text x="150" y="357">SRC</text><text x="245" y="357">EQ</text><text x="340" y="357">NAV</text><text x="442" y="357" fill="#33E3F5">START</text></g>
+        </svg>
+        <figcaption style="position: absolute; left: -10px; bottom: 6px; padding: 14px 18px; background: var(--flare); color: var(--void); font-weight: 700; clip-path: polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)">Booking a remote start? Talk to Ricco.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="upgrades" style="max-width: 1300px; margin: 0 auto; padding: 100px 24px">
+    <h2 style="margin: 0 0 12px; font-size: clamp(38px, 4.8vw, 64px); line-height: 1; letter-spacing: -.02em">Pick your upgrade</h2>
+    <p style="margin: 0 0 40px; color: var(--mist); font-size: 18px; max-width: 560px">Everything is fitted in the shop on 26th Street, wired properly and tested before you drive off.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 24px">
+      <div role="tablist" aria-label="Upgrade type" style="display: grid; gap: 8px; align-content: start">
+        <sc-for list="{{ ups }}" as="u" hint-placeholder-count="5">
+          <button type="button" role="tab" class="kt-tab" aria-selected="{{ u.sel }}" onClick="{{ u.pick }}" style="{{ u.style }}"><span aria-hidden="true" style="font-size: 22px">{{ u.icon }}</span>{{ u.name }}</button>
+        </sc-for>
+      </div>
+      <article style="position: relative; overflow: hidden; background: var(--panel); border: 1px solid var(--edge); padding: 36px; min-height: 380px; display: flex; flex-direction: column; gap: 18px">
+        <span aria-hidden="true" style="position: absolute; right: -80px; top: -80px; width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(circle, rgba(51,227,245,.25), transparent 70%)"></span>
+        <span aria-hidden="true" style="font-size: 56px; position: relative">{{ cur.icon }}</span>
+        <h3 style="margin: 0; font-size: 36px; position: relative">{{ cur.name }}</h3>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: var(--mist); max-width: 560px; position: relative">{{ cur.desc }}</p>
+        <ul style="margin: auto 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; position: relative">
+          <sc-for list="{{ cur.tags }}" as="t" hint-placeholder-count="3"><li style="padding: 9px 14px; border: 1px solid var(--edge); color: var(--cyan); font-weight: 600">{{ t.t }}</li></sc-for>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="repairs" style="background: linear-gradient(120deg, #FF6B3D, #FF8F4D); color: var(--void)">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 90px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 40px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-size: clamp(38px, 4.8vw, 64px); line-height: 1; letter-spacing: -.02em">Dead console? Broken port? Bring it in.</h2>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; max-width: 520px">TVs, home audio, game consoles and all sorts of electronics, repaired at board level with micro-soldering, instead of being thrown out.</p>
+      </div>
+      <svg role="img" aria-label="Close-up of a circuit board with a soldering iron" viewBox="0 0 520 300" style="width: 100%; height: auto">
+        <rect x="20" y="30" width="480" height="240" rx="14" fill="#14532D"/>
+        <g stroke="#D9B44A" stroke-width="4" fill="none"><path d="M60 80 H200 V140 H320"/><path d="M60 200 H160 V160 H260"/><path d="M340 70 V120 H460"/><path d="M300 230 H460"/></g>
+        <g fill="#D9B44A"><circle cx="60" cy="80" r="8"/><circle cx="320" cy="140" r="8"/><circle cx="60" cy="200" r="8"/><circle cx="460" cy="120" r="8"/><circle cx="460" cy="230" r="8"/></g>
+        <rect x="200" y="160" width="110" height="70" rx="6" fill="#100D1E"/><g fill="#C9C4E6"><rect x="190" y="170" width="10" height="6"/><rect x="190" y="186" width="10" height="6"/><rect x="190" y="202" width="10" height="6"/><rect x="310" y="170" width="10" height="6"/><rect x="310" y="186" width="10" height="6"/><rect x="310" y="202" width="10" height="6"/></g>
+        <g transform="translate(330 30) rotate(35)"><rect x="0" y="0" width="22" height="120" rx="8" fill="#100D1E"/><rect x="6" y="120" width="10" height="40" fill="#C9C4E6"/><path d="M8 160 L11 178 L14 160Z" fill="#C9C4E6"/></g>
+        <circle class="kt-glow" cx="320" cy="140" r="16" fill="#FFF3B0" opacity=".8"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="reviews" style="max-width: 1300px; margin: 0 auto; padding: 100px 24px">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 18px; margin-bottom: 36px">
+      <h2 style="margin: 0; font-size: clamp(38px, 4.8vw, 64px); line-height: 1; letter-spacing: -.02em">Brandon drivers on Kelleher</h2>
+      <p style="margin: 0; color: var(--cyan); font-weight: 600">4.8 ★ across 47 Google reviews</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px">
+      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="3">
+        <figure style="margin: 0; padding: 30px; background: var(--panel); border: 1px solid var(--edge); border-left: 3px solid var(--cyan); display: flex; flex-direction: column; gap: 16px; min-height: 220px">
+          <span aria-hidden="true" style="color: var(--cyan); letter-spacing: 3px">★★★★★</span>
+          <blockquote style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 600">"{{ r.q }}"</blockquote>
+          <figcaption style="margin-top: auto; color: var(--mist)">Google review</figcaption>
+        </figure>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="visit" style="border-top: 1px solid var(--edge)">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 90px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-size: clamp(38px, 4.8vw, 64px); line-height: 1; letter-spacing: -.02em">Come by the shop</h2>
+        <p style="margin: 0; font-size: 19px; color: var(--mist)">#4-1051 26th St, Brandon, MB R7B 2B9</p>
+        <p style="margin: 0; font-size: 19px; color: var(--mist)">Monday to Friday, 10 am – 6 pm</p>
+        <p style="margin: 6px 0 0; font-size: 24px; font-weight: 700"><a href="tel:+12047179600" style="color: var(--cyan)">204-717-9600</a></p>
+        <p style="margin: 0; color: var(--mist)">ricco@kellehertech.ca</p>
+      </div>
+      <form aria-label="Ask for a quote" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px; background: var(--panel); border: 1px solid var(--edge); padding: 30px">
+        <label style="display: grid; gap: 8px; font-weight: 600">Name<input type="text" style="min-height: 54px; padding: 0 14px; background: var(--void); border: 1px solid var(--edge); color: var(--white); font: 400 16px 'Chakra Petch', sans-serif"></label>
+        <label style="display: grid; gap: 8px; font-weight: 600">Phone<input type="tel" style="min-height: 54px; padding: 0 14px; background: var(--void); border: 1px solid var(--edge); color: var(--white); font: 400 16px 'Chakra Petch', sans-serif"></label>
+        <label style="grid-column: 1 / -1; display: grid; gap: 8px; font-weight: 600">Vehicle or device<input type="text" placeholder="e.g. 2019 F-150, or a PS5" style="min-height: 54px; padding: 0 14px; background: var(--void); border: 1px solid var(--edge); color: var(--white); font: 400 16px 'Chakra Petch', sans-serif"></label>
+        <label style="grid-column: 1 / -1; display: grid; gap: 8px; font-weight: 600">What do you need?<select style="min-height: 54px; padding: 0 14px; background: var(--void); border: 1px solid var(--edge); color: var(--white); font: 400 16px 'Chakra Petch', sans-serif"><option>Remote starter</option><option>Audio / video</option><option>Alarm or GPS tracking</option><option>Lighting</option><option>Electronics repair</option></select></label>
+        <button type="button" class="kt-btn" style="grid-column: 1 / -1; background: var(--cyan); color: var(--void)">Send my quote request</button>
+      </form>
+    </div>
+  </section>
+  <footer style="background: #0A0816; color: #8C86B0">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; font-size: 14px">
+      <span style="color: var(--white); font-weight: 700">Kelleher Tech &amp; Autosound</span><span>Brandon, Manitoba · 204-717-9600</span>
+    </div>
+  </footer>
+</div>
+</template>
+<div id="dc-root"></div>
+<div role="note" style="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;max-width:calc(100% - 24px);padding:9px 16px;border-radius:999px;background:rgba(20,20,20,.88);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">Sample design by Hashay Patel for Kelleher Tech. Not the official Kelleher Tech website.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morphdom/2.7.4/morphdom-umd.min.js"></script>
+<script>
+(function(){
+  class DCLogic{constructor(p){this.props=p||{};this.state={}}
+    setState(s){Object.assign(this.state,typeof s==='function'?s(this.state):s);render()}
+    forceUpdate(){render()}}
+  window.DCLogic=DCLogic;
+  var TPL=document.getElementById('dc-tpl').innerHTML, root=document.getElementById('dc-root'), comp, fns=[];
+  function look(p,c){var cur=c;p.split('.').forEach(function(k){cur=(cur!=null&&typeof cur==='object')?cur[k]:undefined});return cur}
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+  function fill(t,c){
+    t=t.replace(/\son(\w+)="\{\{\s*([\w.$]+)\s*\}\}"/g,function(m,ev,p){var f=look(p,c);if(typeof f!=='function')return '';fns.push(f);return ' on'+ev.toLowerCase()+'="__dc('+(fns.length-1)+',event)"'});
+    return t.replace(/\{\{\s*([\w.$]+)\s*\}\}/g,function(m,p){return esc(look(p,c))});
+  }
+  function build(){
+    fns=[];var v=comp.renderVals();
+    var t=TPL.replace(/<sc-for([^>]*)>([\s\S]*?)<\/sc-for>/g,function(m,a,inner){
+      var l=(a.match(/list="\{\{\s*([\w.]+)\s*\}\}"/)||[])[1],as=(a.match(/as="(\w+)"/)||[])[1];
+      var arr=look(l,v)||[];return arr.map(function(it){var c=Object.assign({},v);c[as]=it;return fill(inner,c)}).join('');
+    });
+    return fill(t,v);
+  }
+  window.__dc=function(i,e){if(fns[i])fns[i](e)};
+  function render(){var n=document.createElement('div');n.id='dc-root';n.innerHTML=build();
+    if(window.morphdom){morphdom(root,n)}else{root.innerHTML=n.innerHTML}}
+  window.__dcStart=function(C){comp=new C({});render()};
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { u: "start" }; }
+  renderVals() {
+    var self = this;
+    var ups = [
+      { id: "start", icon: "🔑", name: "Remote starters & alarms", desc: "Warm up the truck from the kitchen on a -30 morning, and know it's protected the rest of the day.", tags: ["Remote start", "Alarm systems", "Cruise control"] },
+      { id: "audio", icon: "🔊", name: "Audio & video", desc: "Head units, speakers, amps and screens, tuned so it sounds right in your vehicle, not just loud.", tags: ["Head units", "Speakers & amps", "Video"] },
+      { id: "light", icon: "💡", name: "Interior & exterior lighting", desc: "Brighter driving lights and clean interior lighting, wired in properly with no flicker.", tags: ["Exterior", "Interior", "Accent"] },
+      { id: "gps", icon: "📍", name: "GPS & mobile tracking", desc: "Know where your vehicle or fleet is from your phone, with tracking installed out of sight.", tags: ["Personal", "Fleet", "Theft recovery"] },
+      { id: "fix", icon: "🛠️", name: "Electronics repair", desc: "TVs, home audio and game consoles brought back to life, including micro-soldering on the board.", tags: ["Consoles", "TV & audio", "Micro-soldering"] }
+    ];
+    var cur = ups.filter(function (u) { return u.id === self.state.u; })[0];
+    return {
+      ups: ups.map(function (u) {
+        var on = u.id === self.state.u;
+        return { icon: u.icon, name: u.name, sel: on ? "true" : "false", pick: function () { self.setState({ u: u.id }); },
+          style: on ? "background:#33E3F5;color:#100D1E;border:1px solid #33E3F5" : "background:#1B1730;color:#F5F3FF;border:1px solid #2E2850" };
+      }),
+      cur: { icon: cur.icon, name: cur.name, desc: cur.desc, tags: cur.tags.map(function (t) { return { t: t }; }) },
+      reviews: [
+        { q: "I just had a remote start installed, and always great service and prices." },
+        { q: "Great guy, solid work, great customer service and interaction." },
+        { q: "Install was quick, communication was fast and great, price was good also." }
+      ]
+    };
+  }
+}
+
+__dcStart(Component);</script>
+</body>
+</html>

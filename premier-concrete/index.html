@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample homepage for Premier Concrete</title>
+<meta name="description" content="A sample homepage design made for Premier Concrete by Hashay Patel. Not the official Premier Concrete website.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#E4E1DA}
+*{box-sizing:border-box}
+.pc{--slab:#E4E1DA;--wet:#9A958D;--chalk:#F7F6F2;--graph:#222326;--cobalt:#2348D6;--sky:#B9C8F5;--sand:#CDA866;font-family:Manrope,system-ui,sans-serif;color:var(--graph);background:var(--slab)}
+.pc-wide{font-family:Unbounded,sans-serif;letter-spacing:-.02em}
+.pc-grain{background-image:radial-gradient(rgba(34,35,38,.07) 1px,transparent 1.2px),radial-gradient(rgba(255,255,255,.35) 1px,transparent 1.2px);background-size:7px 7px,11px 11px;background-position:0 0,3px 4px}
+@keyframes pcTrowel{0%,100%{transform:translateX(0) rotate(-8deg)}50%{transform:translateX(170px) rotate(8deg)}}
+@keyframes pcShine{0%{transform:translateX(-120%)}100%{transform:translateX(220%)}}
+@keyframes pcPour{0%,100%{transform:scaleY(.94)}50%{transform:scaleY(1)}}
+.pc-trowel{animation:pcTrowel 3.6s ease-in-out infinite}
+.pc-shine{animation:pcShine 4s ease-in-out infinite}
+.pc-btn{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 28px;border-radius:6px;font:700 16px Manrope,sans-serif;text-decoration:none;border:0;cursor:pointer}
+.pc-btn:focus-visible,.pc-pick:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px}
+.pc-pick{min-height:52px;padding:0 18px;border-radius:6px;cursor:pointer;font:700 15px Manrope,sans-serif;text-align:left}
+.pc-nav a{color:var(--graph);text-decoration:none;font-weight:600}
+.pc-nav a:hover{color:var(--cobalt)}
+@media (max-width:820px){.pc-nav{display:none !important}}
+@media (prefers-reduced-motion:reduce){.pc-trowel,.pc-shine{animation:none}}
+</style>
+
+</head>
+<body>
+<template id="dc-tpl">
+
+
+<div class="pc">
+  <header style="max-width: 1300px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--graph)">
+      <svg aria-hidden="true" width="44" height="44" viewBox="0 0 44 44"><rect width="44" height="44" rx="6" fill="#222326"/><path d="M8 30 L22 22 L36 30 L22 38Z" fill="#9A958D"/><path d="M8 22 L22 14 L36 22 L22 30Z" fill="#E4E1DA"/><path d="M8 14 L22 6 L36 14 L22 22Z" fill="#2348D6"/></svg>
+      <span class="pc-wide" style="font-size: 18px; font-weight: 700">Premier Concrete</span>
+    </a>
+    <nav class="pc-nav" aria-label="Main" style="display: flex; gap: 30px">
+      <a href="#work">Our work</a>
+      <a href="#estimate">Estimator</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="pc-btn" href="tel:+15094242348" style="min-height: 46px; background: var(--graph); color: var(--chalk)">(509) 424-2348</a>
+  </header>
+
+  <section id="top" style="max-width: 1300px; margin: 0 auto 0; padding: 30px 24px 90px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 40px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 26px">
+      <p style="margin: 0; font-weight: 700; color: var(--cobalt); display: flex; gap: 10px; align-items: center"><span aria-hidden="true" style="width: 34px; height: 3px; background: var(--cobalt)"></span>Union Gap &amp; the Yakima Valley</p>
+      <h1 class="pc-wide" style="margin: 0; font-size: clamp(44px, 5.8vw, 82px); line-height: 1; font-weight: 800">Level, square and poured to last.</h1>
+      <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #4A4A4E; max-width: 520px">Driveways, patios, sidewalks and steps, plus tear-outs of the old cracked slab. Francisco and the crew handle it start to finish, with 68 Google reviews averaging 4.9 stars.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a class="pc-btn" href="#estimate" style="background: var(--cobalt); color: #fff">Estimate my project</a>
+        <a class="pc-btn" href="#work" style="background: var(--chalk); color: var(--graph); box-shadow: inset 0 0 0 2px var(--graph)">See what we pour</a>
+      </div>
+    </div>
+
+    <figure style="margin: 0; position: relative">
+      <svg role="img" aria-label="Cross-section of a new driveway slab showing gravel base, rebar grid and four inches of concrete with a broom finish" viewBox="0 0 620 520" style="display: block; width: 100%; height: auto">
+        <defs>
+          <linearGradient id="pcTop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7F6F2"/><stop offset="1" stop-color="#CFCBC2"/></linearGradient>
+          <pattern id="pcBroom" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><rect width="8" height="8" fill="url(#pcTop)"/><path d="M0 4 H8" stroke="#BDB8AE" stroke-width="1"/></pattern>
+          <pattern id="pcGravel" width="22" height="18" patternUnits="userSpaceOnUse"><rect width="22" height="18" fill="#8A7B66"/><circle cx="5" cy="5" r="4" fill="#A3937A"/><circle cx="15" cy="12" r="5" fill="#76695A"/><circle cx="18" cy="3" r="2.5" fill="#B5A68C"/></pattern>
+        </defs>
+        <g transform="translate(10 120)">
+          <path d="M0 260 L250 380 L500 260 L250 140Z" fill="url(#pcGravel)"/>
+          <path d="M0 260 L250 380 V420 L0 300Z" fill="#6E6152"/><path d="M500 260 L250 380 V420 L500 300Z" fill="#5C5145"/>
+          <g transform="translate(0 -60)" stroke="#2348D6" stroke-width="5" stroke-linecap="round" opacity=".95">
+            <path d="M50 284 L300 164"/><path d="M110 313 L360 193"/><path d="M170 342 L420 222"/><path d="M230 371 L480 251"/>
+            <path d="M40 270 L280 386"/><path d="M110 236 L350 352"/><path d="M180 202 L420 318"/><path d="M250 168 L490 284"/>
+          </g>
+          <g transform="translate(0 -150)">
+            <path d="M0 260 L250 380 L500 260 L250 140Z" fill="url(#pcBroom)"/>
+            <path d="M0 260 L250 380 V430 L0 310Z" fill="#B4AFA6"/><path d="M500 260 L250 380 V430 L500 310Z" fill="#9A958D"/>
+            <g class="pc-trowel"><g transform="translate(120 200)"><path d="M0 20 L60 -4 L90 10 L30 34Z" fill="#222326"/><rect x="40" y="-40" width="8" height="40" rx="3" fill="#CDA866" transform="rotate(20 44 -20)"/></g></g>
+          </g>
+        </g>
+        <g font-family="Manrope, sans-serif" font-weight="700" font-size="15" fill="#222326">
+          <line x1="515" y1="250" x2="420" y2="250" stroke="#222326" stroke-width="2"/><circle cx="420" cy="250" r="5"/><text x="522" y="246">4" slab</text><text x="522" y="264" font-weight="500" fill="#4A4A4E">broom finish</text>
+          <line x1="515" y1="350" x2="430" y2="350" stroke="#2348D6" stroke-width="2"/><circle cx="430" cy="350" r="5" fill="#2348D6"/><text x="522" y="346" fill="#2348D6">Rebar grid</text>
+          <line x1="515" y1="430" x2="420" y2="430" stroke="#222326" stroke-width="2"/><circle cx="420" cy="430" r="5"/><text x="522" y="426">Compacted</text><text x="522" y="444" font-weight="500" fill="#4A4A4E">gravel base</text>
+        </g>
+      </svg>
+      <figcaption style="position: absolute; left: 0; top: 10px; background: var(--graph); color: var(--chalk); padding: 16px 20px; border-radius: 6px; display: flex; gap: 14px; align-items: center">
+        <span class="pc-wide" style="font-size: 38px; font-weight: 800; color: var(--sky)">4.9</span>
+        <span style="font-size: 14px; line-height: 1.4">68 Google reviews<br><span style="color: #ABACB2">★★★★★</span></span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section id="work" style="background: var(--graph); color: var(--chalk)">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 100px 24px">
+      <h2 class="pc-wide" style="margin: 0 0 14px; font-size: clamp(34px, 4.4vw, 58px); font-weight: 700; max-width: 820px; line-height: 1.05">Five jobs, done properly</h2>
+      <p style="margin: 0 0 40px; color: #ABACB2; font-size: 18px; max-width: 560px; line-height: 1.6">Residential concrete across Union Gap, Yakima and the valley. Pick one to see what's involved.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 30px; align-items: stretch">
+        <div role="tablist" aria-label="Project type" style="display: grid; gap: 8px; align-content: start">
+          <sc-for list="{{ jobs }}" as="j" hint-placeholder-count="5">
+            <button type="button" role="tab" class="pc-pick" aria-selected="{{ j.sel }}" onClick="{{ j.pick }}" style="{{ j.style }}">{{ j.name }}</button>
+          </sc-for>
+        </div>
+        <article class="pc-grain" style="position: relative; overflow: hidden; border-radius: 6px; background-color: var(--slab); color: var(--graph); padding: 36px; display: flex; flex-direction: column; gap: 18px; min-height: 380px">
+          <span aria-hidden="true" class="pc-shine" style="position: absolute; inset: 0 auto 0 0; width: 40%; background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent)"></span>
+          <h3 class="pc-wide" style="position: relative; margin: 0; font-size: 38px; font-weight: 800">{{ job.name }}</h3>
+          <p style="position: relative; margin: 0; font-size: 18px; line-height: 1.65; max-width: 560px">{{ job.desc }}</p>
+          <ul style="position: relative; margin: auto 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px">
+            <sc-for list="{{ job.steps }}" as="s" hint-placeholder-count="3">
+              <li style="padding: 14px 16px; border-radius: 6px; background: var(--chalk); font-weight: 700; font-size: 15px; border-left: 4px solid var(--cobalt)">{{ s.t }}</li>
+            </sc-for>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="estimate" style="max-width: 1300px; margin: 0 auto; padding: 100px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 44px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <h2 class="pc-wide" style="margin: 0; font-size: clamp(34px, 4.4vw, 58px); font-weight: 700; line-height: 1.05">How much concrete is that?</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #4A4A4E">Pick a size to see roughly how many cubic yards a 4-inch slab takes. Francisco will measure on site and give you a firm quote.</p>
+      <div role="radiogroup" aria-label="Slab size" style="display: flex; flex-wrap: wrap; gap: 8px">
+        <sc-for list="{{ sizes }}" as="z" hint-placeholder-count="4">
+          <button type="button" role="radio" class="pc-pick" aria-checked="{{ z.sel }}" onClick="{{ z.pick }}" style="{{ z.style }}">{{ z.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="border-radius: 6px; background: var(--chalk); padding: 34px; box-shadow: 0 30px 60px -40px rgba(34,35,38,.6); display: grid; gap: 22px">
+      <div style="display: flex; justify-content: space-between; gap: 20px; align-items: end; flex-wrap: wrap">
+        <div><p style="margin: 0; color: #6A6A70; font-weight: 600">{{ est.label }}</p><p class="pc-wide" style="margin: 6px 0 0; font-size: 64px; font-weight: 800; color: var(--cobalt); line-height: 1">{{ est.yards }}</p><p style="margin: 6px 0 0; font-weight: 700">cubic yards, about</p></div>
+        <svg aria-hidden="true" viewBox="0 0 160 110" style="width: 170px"><path d="M10 70 L80 100 L150 70 L80 40Z" fill="#CFCBC2"/><path d="M10 70 L80 100 V108 L10 78Z" fill="#9A958D"/><path d="M150 70 L80 100 V108 L150 78Z" fill="#7F7A72"/><rect x="{{ est.x }}" y="10" width="{{ est.w }}" height="54" rx="6" fill="#2348D6" opacity=".85"/></svg>
+      </div>
+      <div style="height: 12px; border-radius: 6px; background: #E4E1DA; overflow: hidden"><div style="height: 100%; width: {{ est.pct }}; background: var(--cobalt)"></div></div>
+      <p style="margin: 0; font-size: 14px; color: #6A6A70">Area × 4 in depth ÷ 27, plus about 10% for waste. Not a price, just a starting point.</p>
+      <a class="pc-btn" href="#contact" style="background: var(--graph); color: var(--chalk)">Ask for a firm quote</a>
+    </div>
+  </section>
+
+  <section id="reviews" style="background: var(--cobalt); color: #fff">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 100px 24px">
+      <h2 class="pc-wide" style="margin: 0 0 40px; font-size: clamp(34px, 4.4vw, 58px); font-weight: 700">What the valley says</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 18px">
+        <figure style="margin: 0; padding: 30px; border-radius: 6px; background: rgba(255,255,255,.1); display: flex; flex-direction: column; gap: 16px; min-height: 240px"><span aria-hidden="true">★★★★★</span><blockquote style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 600">"Francisco and crew provided great service and quality for our concrete work."</blockquote><figcaption style="margin-top: auto; color: var(--sky)">Google review</figcaption></figure>
+        <figure style="margin: 0; padding: 30px; border-radius: 6px; background: #fff; color: var(--graph); display: flex; flex-direction: column; gap: 16px; min-height: 240px"><span aria-hidden="true" style="color: var(--cobalt)">★★★★★</span><blockquote style="margin: 0; font-size: 21px; line-height: 1.45; font-weight: 600">"Great crew, nice people, professional, good price and great work."</blockquote><figcaption style="margin-top: auto; color: #6A6A70">Google review</figcaption></figure>
+        <div style="padding: 30px; border-radius: 6px; background: #12257A; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; min-height: 240px"><span class="pc-wide" style="font-size: 88px; font-weight: 800; line-height: .9; color: var(--sky)">4.9</span><span style="font-size: 18px; font-weight: 600">Average rating across 68 Google reviews</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="max-width: 1300px; margin: 0 auto; padding: 100px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 44px">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <h2 class="pc-wide" style="margin: 0; font-size: clamp(34px, 4.4vw, 58px); font-weight: 700; line-height: 1.05">Let's look at your slab</h2>
+      <p style="margin: 0; font-size: 18px; color: #4A4A4E">4114 S 3rd St, Union Gap, WA 98903</p>
+      <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 10px 26px; font-size: 17px; max-width: 360px">
+        <dt style="font-weight: 700">Mon – Fri</dt><dd style="margin: 0">7 am – 7 pm</dd>
+        <dt style="font-weight: 700">Saturday</dt><dd style="margin: 0">7 am – 5 pm</dd>
+        <dt style="font-weight: 700">Sunday</dt><dd style="margin: 0">9 am – 5 pm</dd>
+      </dl>
+      <p style="margin: 6px 0 0; font-size: 22px; font-weight: 800"><a href="tel:+15094242348" style="color: var(--cobalt)">(509) 424-2348</a></p>
+    </div>
+    <form aria-label="Request a quote" class="pc-grain" style="background-color: var(--chalk); border-radius: 6px; padding: 30px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px">
+      <label style="display: grid; gap: 8px; font-weight: 700">Name<input type="text" style="min-height: 54px; padding: 0 14px; border: 2px solid #CFCBC2; border-radius: 6px; font: 500 16px Manrope, sans-serif"></label>
+      <label style="display: grid; gap: 8px; font-weight: 700">Phone<input type="tel" style="min-height: 54px; padding: 0 14px; border: 2px solid #CFCBC2; border-radius: 6px; font: 500 16px Manrope, sans-serif"></label>
+      <label style="grid-column: 1 / -1; display: grid; gap: 8px; font-weight: 700">Project<select style="min-height: 54px; padding: 0 14px; border: 2px solid #CFCBC2; border-radius: 6px; font: 500 16px Manrope, sans-serif"><option>Driveway</option><option>Patio</option><option>Sidewalk</option><option>Steps</option><option>Concrete demo</option></select></label>
+      <label style="grid-column: 1 / -1; display: grid; gap: 8px; font-weight: 700">Rough size<input type="text" placeholder="e.g. 20 ft × 24 ft" style="min-height: 54px; padding: 0 14px; border: 2px solid #CFCBC2; border-radius: 6px; font: 500 16px Manrope, sans-serif"></label>
+      <button type="button" class="pc-btn" style="grid-column: 1 / -1; background: var(--cobalt); color: #fff">Request my quote</button>
+    </form>
+  </section>
+
+  <footer style="background: var(--graph); color: #ABACB2">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; font-size: 14px">
+      <span class="pc-wide" style="color: var(--chalk); font-weight: 700">Premier Concrete LLC</span>
+      <span>Union Gap &amp; Yakima, WA · (509) 424-2348 · Fgutierrez21.fg@gmail.com</span>
+    </div>
+  </footer>
+</div>
+</template>
+<div id="dc-root"></div>
+<div role="note" style="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;max-width:calc(100% - 24px);padding:9px 16px;border-radius:999px;background:rgba(20,20,20,.88);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">Sample design by Hashay Patel for Premier Concrete. Not the official Premier Concrete website.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morphdom/2.7.4/morphdom-umd.min.js"></script>
+<script>
+(function(){
+  class DCLogic{constructor(p){this.props=p||{};this.state={}}
+    setState(s){Object.assign(this.state,typeof s==='function'?s(this.state):s);render()}
+    forceUpdate(){render()}}
+  window.DCLogic=DCLogic;
+  var TPL=document.getElementById('dc-tpl').innerHTML, root=document.getElementById('dc-root'), comp, fns=[];
+  function look(p,c){var cur=c;p.split('.').forEach(function(k){cur=(cur!=null&&typeof cur==='object')?cur[k]:undefined});return cur}
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+  function fill(t,c){
+    t=t.replace(/\son(\w+)="\{\{\s*([\w.$]+)\s*\}\}"/g,function(m,ev,p){var f=look(p,c);if(typeof f!=='function')return '';fns.push(f);return ' on'+ev.toLowerCase()+'="__dc('+(fns.length-1)+',event)"'});
+    return t.replace(/\{\{\s*([\w.$]+)\s*\}\}/g,function(m,p){return esc(look(p,c))});
+  }
+  function build(){
+    fns=[];var v=comp.renderVals();
+    var t=TPL.replace(/<sc-for([^>]*)>([\s\S]*?)<\/sc-for>/g,function(m,a,inner){
+      var l=(a.match(/list="\{\{\s*([\w.]+)\s*\}\}"/)||[])[1],as=(a.match(/as="(\w+)"/)||[])[1];
+      var arr=look(l,v)||[];return arr.map(function(it){var c=Object.assign({},v);c[as]=it;return fill(inner,c)}).join('');
+    });
+    return fill(t,v);
+  }
+  window.__dc=function(i,e){if(fns[i])fns[i](e)};
+  function render(){var n=document.createElement('div');n.id='dc-root';n.innerHTML=build();
+    if(window.morphdom){morphdom(root,n)}else{root.innerHTML=n.innerHTML}}
+  window.__dcStart=function(C){comp=new C({});render()};
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { j: "drive", z: 1 }; }
+  renderVals() {
+    var self = this;
+    var jobs = [
+      { id: "drive", name: "Driveways", desc: "New driveways and replacements, graded for drainage so water runs off instead of pooling by the garage.", steps: ["Grade & compact", "Rebar & forms", "Pour & broom finish"] },
+      { id: "patio", name: "Patios", desc: "A flat, solid spot for the grill and the table, shaped to fit the yard you have.", steps: ["Layout & forms", "Pour", "Finish & cure"] },
+      { id: "walk", name: "Sidewalks", desc: "Walkways that stay level, with control joints cut so cracks go where they're meant to.", steps: ["Excavate", "Pour", "Joints & finish"] },
+      { id: "steps", name: "Steps", desc: "Front and back steps with even risers that are easy on the knees.", steps: ["Form each riser", "Pour", "Non-slip finish"] },
+      { id: "demo", name: "Concrete demo", desc: "Cracked, sunken or heaved slab broken out and hauled away, ready for the new pour.", steps: ["Break up", "Haul away", "Prep the base"] }
+    ];
+    var sizes = [
+      { label: "Walkway · 100 sq ft", a: 100 }, { label: "Patio · 300 sq ft", a: 300 },
+      { label: "Driveway · 600 sq ft", a: 600 }, { label: "Big driveway · 1,000 sq ft", a: 1000 }
+    ];
+    var cur = jobs.filter(function (j) { return j.id === self.state.j; })[0];
+    var sz = sizes[this.state.z];
+    var yards = Math.round(sz.a * (4 / 12) / 27 * 1.1 * 10) / 10;
+    var w = Math.round(30 + 90 * sz.a / 1000);
+    return {
+      jobs: jobs.map(function (j, i) {
+        var on = j.id === self.state.j;
+        return { name: j.name, n: "0" + (i + 1), sel: on ? "true" : "false", pick: function () { self.setState({ j: j.id }); },
+          style: on ? "background:#2348D6;color:#fff;border:2px solid #2348D6" : "background:transparent;color:#F7F6F2;border:2px solid rgba(247,246,242,.2)" };
+      }),
+      job: { name: cur.name, desc: cur.desc, steps: cur.steps.map(function (t) { return { t: t }; }) },
+      sizes: sizes.map(function (s, i) {
+        var on = i === self.state.z;
+        return { label: s.label, sel: on ? "true" : "false", pick: function () { self.setState({ z: i }); },
+          style: on ? "background:#222326;color:#F7F6F2;border:2px solid #222326" : "background:#F7F6F2;color:#222326;border:2px solid #CFCBC2" };
+      }),
+      est: { label: sz.label, yards: String(yards), pct: Math.round(sz.a / 10) + "%", w: w, x: 80 - w / 2 }
+    };
+  }
+}
+
+__dcStart(Component);</script>
+</body>
+</html>

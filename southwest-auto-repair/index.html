@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample homepage for Southwest Auto Repair</title>
+<meta name="description" content="A sample homepage design made for Southwest Auto Repair by Hashay Patel. Not the official Southwest Auto Repair website.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@75..125,300..900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F6F8}
+*{box-sizing:border-box}
+.sw{--paper:#F5F6F8;--ink:#14171C;--red:#D7262E;--steel:#5E6876;--line:#DCE0E6;--chrome:#C4CAD3;font-family:Saira,system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+.sw-x{font-stretch:125%;font-weight:800;letter-spacing:-.01em}
+.sw-c{font-stretch:80%}
+@keyframes swNeedle{0%{transform:rotate(-120deg)}70%{transform:rotate(4deg)}100%{transform:rotate(-4deg)}}
+@keyframes swTick{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes swRoll{to{transform:translateX(-50%)}}
+.sw-needle{transform:rotate(-4deg);transform-origin:200px 200px;animation:swNeedle 2.4s cubic-bezier(.3,1.4,.5,1) both}
+.sw-led{animation:swTick 1.6s ease-in-out infinite}
+.sw-roll{display:flex;width:max-content;animation:swRoll 30s linear infinite}
+.sw-btn{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 28px;border-radius:4px;font:700 17px Saira,sans-serif;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(0 0,100% 0,100% 70%,92% 100%,0 100%)}
+.sw-btn:focus-visible,.sw-step:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.sw-step{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:16px;border-radius:4px;cursor:pointer;font:600 16px Saira,sans-serif;text-align:left;min-height:96px}
+.sw-nav a{color:var(--ink);text-decoration:none;font-weight:600}
+.sw-nav a:hover{color:var(--red)}
+@media (max-width:820px){.sw-nav{display:none !important}}
+@media (prefers-reduced-motion:reduce){.sw-needle,.sw-led,.sw-roll{animation:none}}
+</style>
+
+</head>
+<body>
+<template id="dc-tpl">
+
+
+<div class="sw">
+  <div style="background: var(--ink); color: #C9CED6; font-size: 14px">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px">
+      <span>Locally owned &amp; operated in Medicine Hat since 2011</span>
+      <span>Mon–Fri 8 am – 5 pm · 1420 9 Ave SW</span>
+    </div>
+  </div>
+  <header style="max-width: 1300px; margin: 0 auto; padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink)">
+      <svg aria-hidden="true" width="52" height="40" viewBox="0 0 52 40"><path d="M4 36 L22 4 H48 L30 36Z" fill="#D7262E"/><path d="M14 36 L26 14 H40 L28 36Z" fill="#14171C"/></svg>
+      <span style="display: flex; flex-direction: column; line-height: 1"><span class="sw-x" style="font-size: 22px">SOUTHWEST</span><span class="sw-c" style="font-size: 15px; font-weight: 600; color: var(--steel); letter-spacing: .04em">Auto Repair · Medicine Hat</span></span>
+    </a>
+    <nav class="sw-nav" aria-label="Main" style="display: flex; gap: 30px"><a href="#visit">Your visit</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#book">Book</a></nav>
+    <a class="sw-btn" href="tel:+14034875043" style="min-height: 48px; background: var(--red); color: #fff">403-487-5043</a>
+  </header>
+
+  <section id="top" style="position: relative; overflow: hidden">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 30px 24px 70px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 40px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 24px">
+        <h1 class="sw-x" style="margin: 0; font-size: clamp(42px, 5.4vw, 78px); line-height: .98">Quality work.<br>Unbeatable rates.<br>No runaround.</h1>
+        <p style="margin: 0; font-size: 20px; line-height: 1.6; color: #3E4652; max-width: 520px">Brakes, diagnostics, suspension and everyday maintenance for Medicine Hat drivers, from the shop with a 4.9-star Google rating across 75 reviews.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a class="sw-btn" href="#book" style="background: var(--ink); color: #fff">Book a repair</a>
+          <a class="sw-btn" href="tel:+14034875043" style="background: #fff; color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink)">Call the shop</a>
+        </div>
+      </div>
+      <figure style="margin: 0; position: relative; justify-self: center; width: min(100%, 520px)">
+        <svg role="img" aria-label="A rev gauge reading 4.9, the shop's Google rating" viewBox="0 0 400 400" style="display: block; width: 100%; height: auto">
+          <defs><radialGradient id="swFace" cx=".5" cy=".42" r=".6"><stop offset="0" stop-color="#2A303A"/><stop offset="1" stop-color="#0E1014"/></radialGradient></defs>
+          <circle cx="200" cy="200" r="194" fill="#C4CAD3"/><circle cx="200" cy="200" r="182" fill="url(#swFace)"/>
+          <g stroke="#5E6876" stroke-width="3"><path d="M200 200" /></g>
+          <g transform="translate(200 200)">
+            <g stroke="#C9CED6" stroke-width="4" stroke-linecap="round">
+              <path d="M0 -150 V-130" transform="rotate(-120)"/><path d="M0 -150 V-130" transform="rotate(-90)"/><path d="M0 -150 V-130" transform="rotate(-60)"/><path d="M0 -150 V-130" transform="rotate(-30)"/><path d="M0 -150 V-130" transform="rotate(0)"/><path d="M0 -150 V-130" transform="rotate(30)"/>
+            </g>
+            <g stroke="#D7262E" stroke-width="5" stroke-linecap="round"><path d="M0 -150 V-130" transform="rotate(60)"/><path d="M0 -150 V-130" transform="rotate(90)"/><path d="M0 -150 V-130" transform="rotate(120)"/></g>
+            
+            <g font-family="Saira, sans-serif" font-size="18" font-weight="700" fill="#C9CED6" text-anchor="middle">
+              <text x="-95" y="62">1</text><text x="-110" y="6">2</text><text x="-95" y="-50">3</text><text x="-55" y="-91">4</text><text x="0" y="-104">5</text>
+            </g>
+          </g>
+          <text x="200" y="290" text-anchor="middle" font-family="Saira, sans-serif" font-weight="800" font-size="64" fill="#fff" style="font-stretch:125%">4.9</text>
+          <text x="200" y="318" text-anchor="middle" font-family="Saira, sans-serif" font-weight="600" font-size="15" fill="#9AA3B0">75 GOOGLE REVIEWS</text>
+          <g class="sw-needle"><path d="M196 200 L200 64 L204 200Z" fill="#D7262E"/></g>
+          <circle cx="200" cy="200" r="18" fill="#14171C" stroke="#C4CAD3" stroke-width="4"/>
+          <circle class="sw-led" cx="150" cy="350" r="6" fill="#38D27A"/><circle class="sw-led" cx="250" cy="350" r="6" fill="#38D27A" style="animation-delay:-.8s"/>
+        </svg>
+        <figcaption style="position: absolute; right: -6px; bottom: 30px; background: var(--red); color: #fff; padding: 14px 18px; border-radius: 4px; line-height: 1.1"><span class="sw-x" style="display: block; font-size: 34px">2011</span><span style="font-size: 14px">serving the Hat since</span></figcaption>
+      </figure>
+    </div>
+    <div aria-hidden="true" style="background: var(--red); color: #fff; overflow: hidden; padding: 14px 0">
+      <div class="sw-roll sw-x" style="gap: 34px; font-size: 26px; white-space: nowrap">
+        <span>Brakes</span><span>/</span><span>Diagnostics</span><span>/</span><span>Oil &amp; filter</span><span>/</span><span>Suspension</span><span>/</span><span>Steering</span><span>/</span><span>Cooling</span><span>/</span><span>Electrical</span><span>/</span><span>Pre-trip checks</span><span>/</span>
+        <span>Brakes</span><span>/</span><span>Diagnostics</span><span>/</span><span>Oil &amp; filter</span><span>/</span><span>Suspension</span><span>/</span><span>Steering</span><span>/</span><span>Cooling</span><span>/</span><span>Electrical</span><span>/</span><span>Pre-trip checks</span><span>/</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" style="max-width: 1300px; margin: 0 auto; padding: 100px 24px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 44px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <h2 class="sw-x" style="margin: 0; font-size: clamp(36px, 4.6vw, 62px); line-height: 1">How a visit goes</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3E4652">Four steps, and you hear from us at each one. Tap a step to see what happens.</p>
+        <ol role="tablist" aria-label="Steps of a visit" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px">
+          <sc-for list="{{ steps }}" as="s" hint-placeholder-count="4">
+            <li><button type="button" role="tab" class="sw-step" aria-selected="{{ s.sel }}" onClick="{{ s.pick }}" style="{{ s.style }}"><span class="sw-x" style="font-size: 28px">{{ s.n }}</span>{{ s.name }}</button></li>
+          </sc-for>
+        </ol>
+      </div>
+      <article style="background: var(--ink); color: #fff; border-radius: 4px; padding: 36px; min-height: 380px; display: flex; flex-direction: column; gap: 18px; position: relative; overflow: hidden">
+        <span aria-hidden="true" class="sw-x" style="position: absolute; right: 20px; bottom: -30px; font-size: 220px; color: rgba(255,255,255,.06); line-height: 1">{{ cur.n }}</span>
+        <div style="display: flex; gap: 6px">
+          <sc-for list="{{ bar }}" as="b" hint-placeholder-count="4"><span style="{{ b.style }}"></span></sc-for>
+        </div>
+        <h3 class="sw-x" style="margin: 0; font-size: 40px">{{ cur.name }}</h3>
+        <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #C9CED6; max-width: 520px; position: relative">{{ cur.desc }}</p>
+        <p style="margin: auto 0 0; position: relative; color: #38D27A; font-weight: 700">{{ cur.status }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="services" style="background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line)">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 100px 24px">
+      <h2 class="sw-x" style="margin: 0 0 36px; font-size: clamp(36px, 4.6vw, 62px)">What we work on</h2>
+      <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+        <sc-for list="{{ svcs }}" as="v" hint-placeholder-count="6">
+          <li style="background: #fff; padding: 28px; display: flex; flex-direction: column; gap: 12px; min-height: 200px">
+            <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="none" stroke="#D7262E" stroke-width="3"/><path d="{{ v.path }}" stroke="#14171C" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="sw-x" style="margin: 0; font-size: 24px">{{ v.name }}</h3>
+            <p style="margin: 0; color: #4A5260; line-height: 1.6">{{ v.desc }}</p>
+          </li>
+        </sc-for>
+      </ul>
+    </div>
+  </section>
+
+  <section id="reviews" style="max-width: 1300px; margin: 0 auto; padding: 100px 24px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 18px">
+      <div style="display: flex; flex-direction: column; justify-content: center; gap: 10px">
+        <span class="sw-x" style="font-size: 120px; line-height: .85; color: var(--red)">4.9</span>
+        <span style="font-weight: 700; font-size: 18px">75 Google reviews</span>
+        <span style="color: var(--steel)">What Medicine Hat drivers say about us</span>
+      </div>
+      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="3">
+        <figure style="margin: 0; padding: 30px; border-radius: 4px; background: #fff; border: 1px solid var(--line); border-top: 5px solid var(--red); display: flex; flex-direction: column; gap: 16px; min-height: 230px">
+          <span aria-hidden="true" style="color: var(--red); letter-spacing: 3px">★★★★★</span>
+          <blockquote class="sw-c" style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 700">"{{ r.q }}"</blockquote>
+          <figcaption style="margin-top: auto; color: var(--steel)">Google review</figcaption>
+        </figure>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="book" style="background: var(--ink); color: #fff">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 100px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 44px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <h2 class="sw-x" style="margin: 0; font-size: clamp(36px, 4.6vw, 62px); line-height: 1">Book your car in</h2>
+        <p style="margin: 0; font-size: 18px; color: #C9CED6">101-1420 9 Ave SW, Medicine Hat, AB T1A 7J3</p>
+        <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 10px 26px; font-size: 18px; max-width: 360px">
+          <dt style="font-weight: 700">Mon – Fri</dt><dd style="margin: 0; color: #C9CED6">8 am – 5 pm</dd>
+          <dt style="font-weight: 700">Sat – Sun</dt><dd style="margin: 0; color: #C9CED6">Closed</dd>
+        </dl>
+        <p style="margin: 0; font-size: 24px; font-weight: 800"><a href="tel:+14034875043" style="color: #fff">403-487-5043</a></p>
+        <p style="margin: 0; color: #C9CED6">southwestauto1@outlook.com</p>
+      </div>
+      <form aria-label="Book a repair" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px; background: #1F242C; padding: 30px; border-radius: 4px">
+        <label style="display: grid; gap: 8px; font-weight: 600">Name<input type="text" style="min-height: 54px; padding: 0 14px; border: 1px solid #3A414D; background: #14171C; color: #fff; border-radius: 4px; font: 400 16px Saira, sans-serif"></label>
+        <label style="display: grid; gap: 8px; font-weight: 600">Phone<input type="tel" style="min-height: 54px; padding: 0 14px; border: 1px solid #3A414D; background: #14171C; color: #fff; border-radius: 4px; font: 400 16px Saira, sans-serif"></label>
+        <label style="grid-column: 1 / -1; display: grid; gap: 8px; font-weight: 600">Vehicle<input type="text" placeholder="Year, make, model" style="min-height: 54px; padding: 0 14px; border: 1px solid #3A414D; background: #14171C; color: #fff; border-radius: 4px; font: 400 16px Saira, sans-serif"></label>
+        <label style="grid-column: 1 / -1; display: grid; gap: 8px; font-weight: 600">What's it doing?<textarea rows="3" style="padding: 12px 14px; border: 1px solid #3A414D; background: #14171C; color: #fff; border-radius: 4px; font: 400 16px Saira, sans-serif"></textarea></label>
+        <button type="button" class="sw-btn" style="grid-column: 1 / -1; background: var(--red); color: #fff">Request a booking</button>
+      </form>
+    </div>
+  </section>
+  <footer style="background: #0B0D10; color: #8C95A2">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; font-size: 14px">
+      <span class="sw-x" style="color: #fff">SOUTHWEST AUTO REPAIR</span><span>Medicine Hat, Alberta · Locally owned since 2011</span>
+    </div>
+  </footer>
+</div>
+</template>
+<div id="dc-root"></div>
+<div role="note" style="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;max-width:calc(100% - 24px);padding:9px 16px;border-radius:999px;background:rgba(20,20,20,.88);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">Sample design by Hashay Patel for Southwest Auto Repair. Not the official Southwest Auto Repair website.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morphdom/2.7.4/morphdom-umd.min.js"></script>
+<script>
+(function(){
+  class DCLogic{constructor(p){this.props=p||{};this.state={}}
+    setState(s){Object.assign(this.state,typeof s==='function'?s(this.state):s);render()}
+    forceUpdate(){render()}}
+  window.DCLogic=DCLogic;
+  var TPL=document.getElementById('dc-tpl').innerHTML, root=document.getElementById('dc-root'), comp, fns=[];
+  function look(p,c){var cur=c;p.split('.').forEach(function(k){cur=(cur!=null&&typeof cur==='object')?cur[k]:undefined});return cur}
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+  function fill(t,c){
+    t=t.replace(/\son(\w+)="\{\{\s*([\w.$]+)\s*\}\}"/g,function(m,ev,p){var f=look(p,c);if(typeof f!=='function')return '';fns.push(f);return ' on'+ev.toLowerCase()+'="__dc('+(fns.length-1)+',event)"'});
+    return t.replace(/\{\{\s*([\w.$]+)\s*\}\}/g,function(m,p){return esc(look(p,c))});
+  }
+  function build(){
+    fns=[];var v=comp.renderVals();
+    var t=TPL.replace(/<sc-for([^>]*)>([\s\S]*?)<\/sc-for>/g,function(m,a,inner){
+      var l=(a.match(/list="\{\{\s*([\w.]+)\s*\}\}"/)||[])[1],as=(a.match(/as="(\w+)"/)||[])[1];
+      var arr=look(l,v)||[];return arr.map(function(it){var c=Object.assign({},v);c[as]=it;return fill(inner,c)}).join('');
+    });
+    return fill(t,v);
+  }
+  window.__dc=function(i,e){if(fns[i])fns[i](e)};
+  function render(){var n=document.createElement('div');n.id='dc-root';n.innerHTML=build();
+    if(window.morphdom){morphdom(root,n)}else{root.innerHTML=n.innerHTML}}
+  window.__dcStart=function(C){comp=new C({});render()};
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { s: 1 }; }
+  renderVals() {
+    var self = this;
+    var steps = [
+      { name: "Book in", desc: "Call or send the form. Tell us what the car is doing and we'll find a time that works.", status: "Booked: we'll see you then" },
+      { name: "Inspect", desc: "A technician checks it over and tracks down the cause, not just the symptom.", status: "Inspection underway" },
+      { name: "Approve", desc: "We call with what we found and what it'll cost before any work starts.", status: "Waiting on your OK" },
+      { name: "Drive away", desc: "Repair done, road-tested and ready. We walk you through what was fixed.", status: "Ready for pickup" }
+    ];
+    var i = this.state.s;
+    return {
+      steps: steps.map(function (s, k) {
+        var on = k === i;
+        return { n: String(k + 1), name: s.name, sel: on ? "true" : "false", pick: function () { self.setState({ s: k }); },
+          style: on ? "width:100%;background:#D7262E;color:#fff;border:2px solid #D7262E" : "width:100%;background:#fff;color:#14171C;border:2px solid #DCE0E6" };
+      }),
+      cur: { n: String(i + 1), name: steps[i].name, desc: steps[i].desc, status: steps[i].status },
+      bar: steps.map(function (s, k) { return { style: "flex:1;height:6px;border-radius:3px;background:" + (k <= i ? "#D7262E" : "rgba(255,255,255,.15)") }; }),
+      svcs: [
+        { name: "Brakes", desc: "Pads, rotors, calipers and fluid, checked and fixed properly.", path: "M12 20 a8 8 0 1 0 16 0 a8 8 0 1 0 -16 0" },
+        { name: "Diagnostics", desc: "Check engine light on? We find out why before replacing parts.", path: "M10 22 L16 22 L19 14 L23 27 L26 20 L30 20" },
+        { name: "Oil & maintenance", desc: "Oil, filters, fluids and the small stuff that keeps it running.", path: "M20 11 C20 11 13 19 13 23 a7 7 0 0 0 14 0 C27 19 20 11 20 11Z" },
+        { name: "Suspension & steering", desc: "Clunks, pulls and wandering, sorted out for a straight drive.", path: "M14 12 V28 M26 12 V28 M14 16 L26 20 M14 22 L26 26" },
+        { name: "Cooling & heating", desc: "Radiators, hoses and heaters, ready for prairie winters.", path: "M20 10 V30 M12 15 L28 25 M12 25 L28 15" },
+        { name: "Electrical", desc: "Batteries, starters, alternators and the wiring in between.", path: "M22 10 L14 22 H20 L18 30 L26 18 H20Z" }
+      ],
+      reviews: [{ q: "Great service, great rates and friendly staff." }, { q: "Always has done amazing quality work at unbeatable prices." }]
+    };
+  }
+}
+
+__dcStart(Component);</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sample homepage for Tonya Marie Photos</title>
+<meta name="description" content="A sample homepage design made for Tonya Marie Photos by Hashay Patel. Not the official Tonya Marie Photos website.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Syne:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6EFE9}
+*{box-sizing:border-box}
+.tm{--paper:#F6EFE9;--ink:#191516;--rose:#C9737B;--dusk:#3E2C46;--gold:#E3B25E;--sage:#94A58B;font-family:Syne,system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+.tm-serif{font-family:'Playfair Display',Georgia,serif;font-weight:500;letter-spacing:-.015em}
+@keyframes tmFloat{0%,100%{transform:translateY(0) rotate(var(--r))}50%{transform:translateY(-12px) rotate(var(--r))}}
+@keyframes tmFlash{0%,90%,100%{opacity:0}93%{opacity:.85}}
+.tm-pol{animation:tmFloat 7s ease-in-out infinite}
+.tm-flash{animation:tmFlash 6s ease-in-out infinite}
+.tm-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 28px;border-radius:999px;font:600 16px Syne,sans-serif;text-decoration:none;border:0;cursor:pointer}
+.tm-btn:focus-visible,.tm-tab:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.tm-tab{min-height:50px;padding:0 22px;border-radius:999px;cursor:pointer;font:600 15px Syne,sans-serif}
+.tm-nav a{color:var(--ink);text-decoration:none;font-weight:500}
+.tm-nav a:hover{color:var(--rose)}
+@media (max-width:820px){.tm-nav{display:none !important}}
+@media (prefers-reduced-motion:reduce){.tm-pol,.tm-flash{animation:none}}
+</style>
+
+</head>
+<body>
+<template id="dc-tpl">
+
+
+<div class="tm">
+  <header style="max-width: 1300px; margin: 0 auto; padding: 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px">
+    <a href="#top" style="text-decoration: none; color: var(--ink); line-height: 1"><span class="tm-serif" style="font-size: clamp(24px, 6vw, 30px); font-style: italic; white-space: nowrap">Tonya Marie</span><span style="display: block; font-size: 13px; margin-top: 4px; letter-spacing: .14em">PHOTOS · LUBBOCK</span></a>
+    <nav class="tm-nav" aria-label="Main" style="display: flex; gap: 30px"><a href="#sessions">Sessions</a><a href="#how">How it works</a><a href="#book">Book</a></nav>
+    <a class="tm-btn" href="#book" style="min-height: 46px; padding: 0 20px; white-space: nowrap; background: var(--ink); color: var(--paper)">Book now</a>
+  </header>
+
+  <section id="top" style="max-width: 1300px; margin: 0 auto; padding: 20px 24px 90px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 40px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 24px">
+      <p style="margin: 0; align-self: flex-start; padding: 8px 16px; border-radius: 999px; background: #fff; font-weight: 600; font-size: 14px">★ 5.0 · 83 Google reviews · 98% recommend on Facebook</p>
+      <h1 class="tm-serif" style="margin: 0; font-size: clamp(58px, 7.6vw, 112px); line-height: .95">The moments you'll want to frame.</h1>
+      <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #4A4244; max-width: 500px">Relaxed, natural portraits for families, seniors, couples and the milestones in between. Sessions around Lubbock, by appointment.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a class="tm-btn" href="#book" style="background: var(--rose); color: #fff">Check my date</a>
+        <a class="tm-btn" href="#sessions" style="background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink)">See sessions</a>
+      </div>
+    </div>
+    <div style="position: relative; height: min(560px, 120vw)">
+      <span aria-hidden="true" class="tm-flash" style="position: absolute; inset: 0; border-radius: 40px; background: radial-gradient(circle at 60% 40%, #fff, transparent 60%); z-index: 3; pointer-events: none"></span>
+      <figure class="tm-pol" style="--r: -8deg; position: absolute; left: 2%; top: 8%; width: 52%; margin: 0; background: #fff; padding: 14px 14px 54px; box-shadow: 0 30px 50px -30px rgba(25,21,22,.6)">
+        <svg role="img" aria-label="Illustrated golden-hour family portrait in a field" viewBox="0 0 300 300" style="display: block; width: 100%; height: auto"><defs><linearGradient id="tmA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5C27A"/><stop offset=".6" stop-color="#E88E6B"/><stop offset="1" stop-color="#94A58B"/></linearGradient></defs><rect width="300" height="300" fill="url(#tmA)"/><circle cx="220" cy="120" r="44" fill="#FFE7B3"/><path d="M0 220 Q150 190 300 220 V300 H0Z" fill="#6E7F63"/><g fill="#3E2C46"><circle cx="110" cy="150" r="14"/><path d="M92 168 h36 l8 70 h-52z"/><circle cx="160" cy="146" r="15"/><path d="M142 164 h38 l6 76 h-50z"/><circle cx="196" cy="186" r="10"/><path d="M184 198 h24 l4 42 h-32z"/></g></svg>
+        <figcaption class="tm-serif" style="position: absolute; bottom: 14px; left: 18px; font-style: italic; font-size: 18px">Family, golden hour</figcaption>
+      </figure>
+      <figure class="tm-pol" style="--r: 6deg; position: absolute; right: 0; top: 0; width: 46%; margin: 0; background: #fff; padding: 12px 12px 50px; box-shadow: 0 30px 50px -30px rgba(25,21,22,.6); animation-delay: -2s">
+        <svg role="img" aria-label="Illustrated senior portrait against a dusk sky" viewBox="0 0 300 360" style="display: block; width: 100%; height: auto"><defs><linearGradient id="tmB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3E2C46"/><stop offset="1" stop-color="#C9737B"/></linearGradient></defs><rect width="300" height="360" fill="url(#tmB)"/><circle cx="150" cy="150" r="46" fill="#E9C3A6"/><path d="M104 140 Q150 70 196 140 Q196 110 150 96 Q104 110 104 140Z" fill="#191516"/><path d="M70 360 Q80 230 150 220 Q220 230 230 360Z" fill="#F6EFE9"/><path d="M120 248 l30 40 l30 -40" fill="none" stroke="#E3B25E" stroke-width="5"/></svg>
+        <figcaption class="tm-serif" style="position: absolute; bottom: 12px; left: 16px; font-style: italic; font-size: 17px">Class of '27</figcaption>
+      </figure>
+      <figure class="tm-pol" style="--r: -2deg; position: absolute; right: 12%; bottom: 0; width: 44%; margin: 0; background: #fff; padding: 12px 12px 48px; box-shadow: 0 30px 50px -30px rgba(25,21,22,.6); animation-delay: -4s">
+        <svg role="img" aria-label="Illustrated couple under a big Texas sky" viewBox="0 0 300 240" style="display: block; width: 100%; height: auto"><rect width="300" height="240" fill="#BFD6DE"/><path d="M0 170 H300 V240 H0Z" fill="#D9B98A"/><circle cx="60" cy="60" r="26" fill="#fff" opacity=".8"/><circle cx="90" cy="64" r="20" fill="#fff" opacity=".8"/><g fill="#191516"><circle cx="138" cy="112" r="11"/><path d="M126 124 h24 l6 50 h-36z"/><circle cx="166" cy="116" r="10"/><path d="M154 128 h24 l10 46 h-42z" fill="#C9737B"/></g></svg>
+        <figcaption class="tm-serif" style="position: absolute; bottom: 12px; left: 16px; font-style: italic; font-size: 17px">Engaged</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="sessions" style="background: var(--dusk); color: var(--paper)">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 100px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 44px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <h2 class="tm-serif" style="margin: 0; font-size: clamp(46px, 5.6vw, 78px); line-height: 1">Pick your session</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #D9CCE0; max-width: 460px">Every session is booked by appointment so there's time to plan the outfits, the light and the location together.</p>
+        <div role="tablist" aria-label="Session type" style="display: flex; flex-wrap: wrap; gap: 8px">
+          <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="4"><button type="button" role="tab" class="tm-tab" aria-selected="{{ t.sel }}" onClick="{{ t.pick }}" style="{{ t.style }}">{{ t.name }}</button></sc-for>
+        </div>
+      </div>
+      <article style="border-radius: 30px; overflow: hidden; background: var(--paper); color: var(--ink); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr))">
+        <div style="min-height: 280px; background: {{ cur.bg }}; display: grid; place-items: center"><span class="tm-serif" style="font-size: 52px; font-style: italic; color: #fff; text-align: center; padding: 20px; text-shadow: 0 2px 20px rgba(25,21,22,.25)">{{ cur.icon }}</span></div>
+        <div style="padding: 30px; display: flex; flex-direction: column; gap: 12px">
+          <h3 class="tm-serif" style="margin: 0; font-size: 36px">{{ cur.name }}</h3>
+          <p style="margin: 0; line-height: 1.65; color: #4A4244">{{ cur.desc }}</p>
+          <ul style="margin: 6px 0 0; padding: 0; list-style: none; display: grid; gap: 8px">
+            <sc-for list="{{ cur.points }}" as="p" hint-placeholder-count="3"><li style="display: flex; gap: 10px"><span aria-hidden="true" style="color: var(--rose)">✦</span>{{ p.t }}</li></sc-for>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="how" style="max-width: 1300px; margin: 0 auto; padding: 100px 24px">
+    <h2 class="tm-serif" style="margin: 0 0 40px; font-size: clamp(46px, 5.6vw, 78px); line-height: 1">From hello to prints</h2>
+    <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px">
+      <li style="padding: 28px; border-radius: 24px; background: #fff; display: flex; flex-direction: column; gap: 10px"><span class="tm-serif" style="font-size: 54px; font-style: italic; color: var(--rose)">1</span><strong style="font-size: 20px">Say hello</strong><span style="color: #4A4244; line-height: 1.6">Send a message with the kind of session and the dates you have in mind.</span></li>
+      <li style="padding: 28px; border-radius: 24px; background: #fff; display: flex; flex-direction: column; gap: 10px"><span class="tm-serif" style="font-size: 54px; font-style: italic; color: var(--rose)">2</span><strong style="font-size: 20px">Plan it together</strong><span style="color: #4A4244; line-height: 1.6">Location, outfits and timing, chosen so the light does the work.</span></li>
+      <li style="padding: 28px; border-radius: 24px; background: #fff; display: flex; flex-direction: column; gap: 10px"><span class="tm-serif" style="font-size: 54px; font-style: italic; color: var(--rose)">3</span><strong style="font-size: 20px">Shoot the session</strong><span style="color: #4A4244; line-height: 1.6">Relaxed and unhurried, with plenty of room for real smiles.</span></li>
+      <li style="padding: 28px; border-radius: 24px; background: var(--ink); color: var(--paper); display: flex; flex-direction: column; gap: 10px"><span class="tm-serif" style="font-size: 54px; font-style: italic; color: var(--gold)">4</span><strong style="font-size: 20px">Your gallery</strong><span style="color: #CFC6C8; line-height: 1.6">Edited images delivered in an online gallery, ready to share and print.</span></li>
+    </ol>
+  </section>
+
+  <section id="book" style="background: var(--rose); color: #fff">
+    <div style="max-width: 1300px; margin: 0 auto; padding: 90px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <h2 class="tm-serif" style="margin: 0; font-size: clamp(46px, 5.6vw, 78px); line-height: 1">Let's book your date</h2>
+        <p style="margin: 0; font-size: 18px">Lubbock, Texas · by appointment only</p>
+        <p style="margin: 0; font-size: 24px; font-weight: 700"><a href="tel:+15757604597" style="color: #fff">(575) 760-4597</a></p>
+        <p style="margin: 0">tonya.snapshot@gmail.com</p>
+      </div>
+      <form aria-label="Book a session" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 14px; background: #fff; color: var(--ink); padding: 28px; border-radius: 26px">
+        <label style="display: grid; gap: 8px; font-weight: 600">Name<input type="text" style="min-height: 52px; padding: 0 14px; border: 2px solid #EADBD4; border-radius: 14px; font: 400 16px Syne, sans-serif"></label>
+        <label style="display: grid; gap: 8px; font-weight: 600">Session<select style="min-height: 52px; padding: 0 14px; border: 2px solid #EADBD4; border-radius: 14px; font: 400 16px Syne, sans-serif"><option>Family</option><option>Senior</option><option>Couple</option><option>Milestone</option></select></label>
+        <label style="grid-column: 1 / -1; display: grid; gap: 8px; font-weight: 600">Preferred date<input type="date" style="min-height: 52px; padding: 0 14px; border: 2px solid #EADBD4; border-radius: 14px; font: 400 16px Syne, sans-serif"></label>
+        <button type="button" class="tm-btn" style="grid-column: 1 / -1; background: var(--ink); color: #fff">Send my request</button>
+      </form>
+    </div>
+  </section>
+</div>
+</template>
+<div id="dc-root"></div>
+<div role="note" style="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;max-width:calc(100% - 24px);padding:9px 16px;border-radius:999px;background:rgba(20,20,20,.88);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">Sample design by Hashay Patel for Tonya Marie Photos. Not the official Tonya Marie Photos website.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morphdom/2.7.4/morphdom-umd.min.js"></script>
+<script>
+(function(){
+  class DCLogic{constructor(p){this.props=p||{};this.state={}}
+    setState(s){Object.assign(this.state,typeof s==='function'?s(this.state):s);render()}
+    forceUpdate(){render()}}
+  window.DCLogic=DCLogic;
+  var TPL=document.getElementById('dc-tpl').innerHTML, root=document.getElementById('dc-root'), comp, fns=[];
+  function look(p,c){var cur=c;p.split('.').forEach(function(k){cur=(cur!=null&&typeof cur==='object')?cur[k]:undefined});return cur}
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+  function fill(t,c){
+    t=t.replace(/\son(\w+)="\{\{\s*([\w.$]+)\s*\}\}"/g,function(m,ev,p){var f=look(p,c);if(typeof f!=='function')return '';fns.push(f);return ' on'+ev.toLowerCase()+'="__dc('+(fns.length-1)+',event)"'});
+    return t.replace(/\{\{\s*([\w.$]+)\s*\}\}/g,function(m,p){return esc(look(p,c))});
+  }
+  function build(){
+    fns=[];var v=comp.renderVals();
+    var t=TPL.replace(/<sc-for([^>]*)>([\s\S]*?)<\/sc-for>/g,function(m,a,inner){
+      var l=(a.match(/list="\{\{\s*([\w.]+)\s*\}\}"/)||[])[1],as=(a.match(/as="(\w+)"/)||[])[1];
+      var arr=look(l,v)||[];return arr.map(function(it){var c=Object.assign({},v);c[as]=it;return fill(inner,c)}).join('');
+    });
+    return fill(t,v);
+  }
+  window.__dc=function(i,e){if(fns[i])fns[i](e)};
+  function render(){var n=document.createElement('div');n.id='dc-root';n.innerHTML=build();
+    if(window.morphdom){morphdom(root,n)}else{root.innerHTML=n.innerHTML}}
+  window.__dcStart=function(C){comp=new C({});render()};
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { t: 0 }; }
+  renderVals() {
+    var self = this;
+    var s = [
+      { name: "Family", icon: "All of you", bg: "linear-gradient(160deg,#F5C27A,#E88E6B)", desc: "Everyone together, kids included, without the stiff poses.", points: [{ t: "Outdoor or in-home" }, { t: "Room for grandparents and pets" }, { t: "Great for holiday cards" }] },
+      { name: "Senior", icon: "Class of '27", bg: "linear-gradient(160deg,#3E2C46,#C9737B)", desc: "Senior portraits that actually look like you, with outfit changes and a spot that means something.", points: [{ t: "Multiple outfits" }, { t: "Your favourite Lubbock spots" }, { t: "Yearbook-ready edits" }] },
+      { name: "Couple", icon: "Just engaged", bg: "linear-gradient(160deg,#BFD6DE,#94A58B)", desc: "Engagements, anniversaries or just because, under a big Texas sky.", points: [{ t: "Golden-hour timing" }, { t: "Save-the-date favourites" }, { t: "Relaxed and fun" }] },
+      { name: "Milestone", icon: "One year old", bg: "linear-gradient(160deg,#E3B25E,#F6EFE9)", desc: "Birthdays, new arrivals and the moments that only happen once.", points: [{ t: "Small and personal" }, { t: "Props welcome" }, { t: "Prints for the family" }] }
+    ];
+    var c = s[this.state.t];
+    return {
+      tabs: s.map(function (x, i) { var on = i === self.state.t; return { name: x.name, sel: on ? "true" : "false", pick: function () { self.setState({ t: i }); }, style: on ? "background:#F6EFE9;color:#191516;border:2px solid #F6EFE9" : "background:transparent;color:#F6EFE9;border:2px solid rgba(246,239,233,.4)" }; }),
+      cur: c
+    };
+  }
+}
+
+__dcStart(Component);</script>
+</body>
+</html>
